@@ -1,0 +1,194 @@
+/*Gives the same style for contentboxes where text and bottons are placed (section one, three and five). Centering the content*/
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  background-color: var(--main-bg);
+  color: var(--font-color);
+}
+
+/*styles for the section one */
+
+.one .content {
+  height: 65vh;
+}
+
+.one .img-container {
+  height: 60vh;
+}
+
+.text-one {
+  padding-bottom: 2rem;
+}
+
+.text-one h2 {
+  padding-bottom: 1rem;
+}
+
+.text-one p {
+  font-weight: 200;
+  line-height: 2rem;
+  height: 100%;
+  max-width: 550px;
+}
+
+/*styles for the section two */
+.two .img-container {
+  height: 80vh;
+}
+
+/*styles for the section three */
+.three .content {
+  height: 40vh;
+}
+
+.text-three {
+  padding-bottom: 2rem;
+}
+
+.text-three p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+}
+
+.text-three h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.three .img-container {
+  height: 100vh;
+}
+
+/*styles for the section three */
+.four .img-container {
+  height: 100vh;
+  position: relative;
+}
+
+.four .content-on-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  color: var(--font-color-light);
+}
+
+.four .content-on-img h2 {
+  margin-bottom: 23rem;
+}
+
+.four .content-on-img .button {
+  margin-top: 2rem;
+}
+
+/*styles for the section five */
+.five .content {
+  height: 60vh;
+}
+
+.five .img-container {
+  height: 80vh;
+}
+
+.text-five {
+  padding-bottom: 2rem;
+}
+
+.text-five h2 {
+  padding-bottom: 1rem;
+}
+
+.text-five p {
+  font-weight: 200;
+  line-height: 2rem;
+  height: 100%;
+  max-width: 500px;
+}
+
+@media screen and (min-width: 700px) {
+  .content {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 8rem 0rem 8rem;
+  }
+
+  h2 {
+    padding-top: 0;
+  }
+
+  .text-five,
+  .text-one,
+  .text-three {
+    padding-bottom: 0;
+  }
+
+  /*styles for the section one */
+  .one {
+    height: 100vh;
+  }
+
+  .one .content {
+    height: 35vh;
+  }
+
+  .one .img-container {
+    height: 65vh;
+  }
+
+  /*styles for the section two */
+  .two .img-container {
+    height: 100vh;
+  }
+
+/*styles for the section three*/
+    .three {
+      height: 100vh;
+    }
+  
+    .three .content {
+      height: 25vh;
+    }
+    .text-three h2 {
+      text-align: start;
+    }
+  
+    .three .big-box {
+      height: 75vh;
+      display: flex;
+    }
+
+
+    /*styles for the section four */
+    .four .content-on-img h2 {
+      margin-bottom: 27rem;
+    }
+    .four .content-on-img .button {
+      margin-top: 6rem;
+    }
+  
+  /*styles for the section five */
+  .five {
+    height: 100vh;
+  }
+
+  .five .content {
+    height: 40vh;
+  }
+
+  .five .img-container {
+    height: 60vh;
+  }
+
+
+    

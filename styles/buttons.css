@@ -1,0 +1,48 @@
+.button {
+  /*padding: 0.3rem 2rem 0.3rem 2rem;*/
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-weight: 200px;
+  padding: 0.3rem 2rem 0.3rem 2rem;
+  text-align: center;
+}
+
+.hero .button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.one .button {
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.three .button {
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.four .button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.five .button {
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 700px) {
+  .button {
+    border-radius: 0.4rem;
+    text-decoration: none;
+    font-weight: 200px;
+    padding: 0.3rem 7rem 0.3rem 7rem;
+    text-align: center;
+  }
+}
