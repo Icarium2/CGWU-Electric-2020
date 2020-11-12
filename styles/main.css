@@ -105,13 +105,23 @@
 }
 
 @media screen and (min-width: 700px) {
+
+  .section-container{
+
+  }
+
+  .content-box{
+    padding: 3rem 4rem 3rem 4rem;
+
+  }
+
+
   .content {
     height: 20px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0rem 4rem 0rem 4rem;
+    align-items: flex-end;
+    justify-content: space-between; 
   }
 
   h2 {
