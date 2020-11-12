@@ -29,7 +29,8 @@
   font-weight: 200;
   line-height: 2rem;
   height: 100%;
-  max-width: 550px;
+  min-width:  350px;
+  max-width: 475px;
 }
 
 /*styles for the section two */
@@ -135,12 +136,33 @@
   }
 
   /*styles for the section one */
+
+.one{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+
+}
+
+.one  .content-box{
+  padding: 3rem 2rem 3rem 2rem;
+
+}
+
   .one .content {
-    height: 100%
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+  }
+
+  .text-one{
+    max-width: 550px;
   }
 
   .one .img-container {
-    height: 600px;
+    height: 100%;
   }
 
   /*styles for the section two */
@@ -185,6 +207,14 @@
 
   .five .img-container {
     height: 100%;
+  }
+
+
+  @media screen and (min-width: 1000px) {
+    .content-box{
+      padding: 3rem 7rem 3rem 7rem;
+  
+    }
   }
 
 
