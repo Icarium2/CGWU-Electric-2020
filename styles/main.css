@@ -13,12 +13,15 @@
 
 /*styles for the section one */
 .one .img-container {
-  height: 70vh;
+  height: 100vh;
 }
+
+
 
 .text-one {
   padding-bottom: 2rem;
 }
+
 
 .text-one h2 {
   padding-bottom: 1rem;
@@ -60,8 +63,12 @@
 
 
 /*styles for the section three */
-.four .img-container {
+
+.four{
   height: 100vh;
+}
+.four .img-container {
+  height: 100%;
   position: relative;
   background-color: rgb(34, 34, 34);
 }
@@ -107,19 +114,23 @@
   max-width: 500px;
 }
 
+@media screen and (min-width: 450px){
+
+  /*.img-container{
+    max-width: 450px;
+  }*/
+
+}
+
 @media screen and (min-width: 700px) {
 
-  .section-container{
-
-  }
 
   .content-box{
-    padding: 3rem 4rem 3rem 4rem;
+    padding: 2rem 2rem 2rem 2rem;
 
   }
 
   .content {
-    height: 20px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -137,14 +148,11 @@
   }
 
   /*styles for the section one */
-
-.one{
-  display: flex;
-  flex-direction: row-reverse;
-  height: 100vh;
- 
-
-}
+  .one{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+  }
 
   .one .content {
     height: 100%;
@@ -154,13 +162,18 @@
     justify-content: space-between;
   }
 
-  .text-one{
-    max-width: 550px;
-  }
+ 
 
   .one .img-container {
-    height: 100%;
+    height: 100vh;
+
   }
+
+  .one .img-container img {
+     object-position: bottom;
+  }
+
+
 
   /*styles for the section two */
   .two .img-container {
@@ -173,21 +186,25 @@
     }
   
     .three .content {
-      height: 20%;
+      height
     }
     .text-three h2 {
       text-align: start;
     }
 
+    .three .big-box {
+      display: flex;
+      height: 78vh
+      
+    }
+
     .three .img-container{
+      width: 50vw;
       height: 100%;
-      width: 50%;
+      
     }
   
-    .three .big-box {
-      height: 80%;
-      display: flex;
-    }
+    
 
 
     /*styles for the section four */
@@ -215,7 +232,14 @@
   @media screen and (min-width: 1000px) {
     .content-box{
       /*padding: 3rem 7rem 3rem 7rem;*/
+    }
   
+  }
+
+
+  @media screen and (min-width: 1500px) {
+    .hero .img-container img {
+      object-position: center;
     }
   }
 
