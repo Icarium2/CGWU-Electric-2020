@@ -24,7 +24,7 @@
 
 
 .text-one h2 {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .text-one p {
@@ -114,22 +114,13 @@
   max-width: 500px;
 }
 
-@media screen and (min-width: 450px){
 
-  /*.img-container{
-    max-width: 450px;
-  }*/
-
-}
 
 @media screen and (min-width: 800px) {
 
-
   .content-box{
-    padding: 2rem 2rem 2rem 2rem;
-
+    padding: 0rem 0rem 0rem 0rem;
   }
-
   .content {
     display: flex;
     flex-direction: row;
@@ -169,7 +160,8 @@
   } 
 
   .text-one{
-    max-width: 340px;
+    max-width: 320px;
+    
   }
 
   .one .img-container {
@@ -239,7 +231,13 @@
 
   @media screen and (min-width: 1000px) {
     .content-box{
-      /*padding: 3rem 7rem 3rem 7rem;*/
+      padding: 2rem 0.5rem 2rem 0.5rem;
+  
+    }
+
+    .text-one{
+      max-width: 340px;
+      
     }
   
   }
