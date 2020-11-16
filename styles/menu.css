@@ -3,16 +3,16 @@ nav {
   justify-content: space-between;
   align-items: center;
   min-height: 5vh;
-  margin-bottom: 0;
   position: fixed;
   width: 100%;
+  max-width: 2000px;
   z-index: 30;
-  background-color: transparent;
-  padding: 0.3rem 0.5rem 0rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: rgba(22, 33, 51, 0.8);
+  max-width: 2000px;
 }
 
 .logo {
-  color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
@@ -35,7 +35,7 @@ nav {
   color: white;
   text-decoration: none;
   letter-spacing: 3px;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 16px;
 }
 .nav-items a:hover {
@@ -62,7 +62,7 @@ nav {
 
 @media screen and (min-width: 769px) {
   nav {
-    padding: 0.7rem 2rem 0rem 2rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
   }
   .nav-items li:last-of-type {
     margin-right: 0;
@@ -78,11 +78,10 @@ nav {
     flex-direction: column;
     position: absolute;
     right: 0px;
-    height: 50vh;
-    top: 5vh;
+    height: 100vh;
+    top: 0vh;
     background-color: #162133;
-    align-items: center;
-    width: 20%;
+    width: 100%;
     transform: translateX(100%);
     transition: transform 0.5s ease in;
   }
