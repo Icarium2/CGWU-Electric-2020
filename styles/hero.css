@@ -22,8 +22,12 @@
   bottom: 0;
 }
 
+.hero-content svg path {
+  /*box-shadow: 0px 4px 4px rgba(4, 4, 4, 0.25);*/
+}
+
 .hero-content h1 {
-  margin-bottom: 4rem;
+  margin-bottom: 9rem;
 }
 
 .hero-content p {
@@ -36,6 +40,7 @@
 
 .hero .img-container img {
   object-position: bottom;
+  /*opacity: 70%;*/
 }
 
 #fademe {
