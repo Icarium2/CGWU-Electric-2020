@@ -5,36 +5,45 @@
   font-weight: 200px;
   padding: 0.3rem 2rem 0.3rem 2rem;
   text-align: center;
+  background-color: transparent;
+  transition: ease 0.3s;
 }
 
-.hero .button {
-  background-color: transparent;
-  border: 1px solid white;
+.one .button:hover {
+  background-color: var(--dark-blue);
   color: white;
 }
 
+.hero .button:hover {
+  background-color: grey;
+}
+
+.hero .button {
+  /*border: 1px solid white;*/
+  color: var(--dark-blue);
+  background-color: white;
+  opacity: 0;
+  transition: opacity 1s 0.2s;
+}
+
 .one .button {
-  background-color: transparent;
-  border: 1px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
 }
 
 .three .button {
-  background-color: transparent;
-  border: 1px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
 }
 
 .four .button {
-  background-color: transparent;
   border: 1px solid white;
   color: white;
 }
 
 .five .button {
-  background-color: transparent;
-  border: 1px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
 }
 
 @media screen and (min-width: 700px) {

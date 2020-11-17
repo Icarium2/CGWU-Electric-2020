@@ -21,6 +21,7 @@ body {
   --main-bg: rgb(238, 238, 238);
   --font-color: black;
   --font-color-light: white;
+  --dark-blue: #162133;
 }
 
 img {
