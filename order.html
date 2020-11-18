@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>order here!</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Product Details</title>
+
+    <link rel="stylesheet" href="/styles/order.css" />
+  </head>
+  <body>
+    <main>
+      <section class="product-detail">
+        <div class="imagery">
+          <img
+            src="/images/section3/section_3_utsida_w450.png"
+            alt="Car at night"
+            class="image"
+          />
+        </div>
+        <div class="detail">
+          <h1>Electric</h1>
+          <h3>Coming february 2021</h3>
+          <div class="options">
+            <h2>Select view</h2>
+            <div class="view btn_grid">
+              <div class="btn_wrap">
+                <button class="size selected">Exterior</button>
+              </div>
+              <div class="btn_wrap">
+                <button class="size">Interior</button>
+              </div>
+            </div>
+
+            <h2>Colours</h2>
+            <div class="colours btn_grid">
+              <div class="btn_wrap">
+                <button
+                  type="button"
+                  class="colour blue selected"
+                  data-name="blue"
+                  data-colour="#2484E4"
+                >
+                  Blue
+                </button>
+              </div>
+              <div class="btn_wrap">
+                <button
+                  type="button"
+                  class="colour red"
+                  data-name="red"
+                  data-colour="#AF1E2D"
+                >
+                  Red
+                </button>
+              </div>
+              <div class="btn_wrap">
+                <button
+                  type="button"
+                  class="colour yellow"
+                  data-name="yellow"
+                  data-colour="#FFCE00"
+                >
+                  Yellow
+                </button>
+              </div>
+              <div class="btn_wrap">
+                <button
+                  type="button"
+                  class="colour white"
+                  data-name="white"
+                  data-colour="#EEEEEE"
+                >
+                  White
+                </button>
+              </div>
+              <div class="btn_wrap">
+                <button
+                  type="button"
+                  class="colour black"
+                  data-name="black"
+                  data-colour="#212121"
+                >
+                  Black
+                </button>
+              </div>
+            </div>
+            <button type="submit" class="submit">
+              E-mail-form here instead?
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="order.js"></script>
+  </body>
 </html>
