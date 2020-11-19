@@ -76,7 +76,7 @@ label {
 .form-container textarea {
   width: 100%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 5px 0 5px 0;
   border: none;
   border-radius: 40px;
   background: #ffffff;
@@ -84,10 +84,19 @@ label {
   max-height: 50px;
 }
 
+.question {
+min-height: 90px;
+
+}
 /* When the textarea gets focus, do something */
 .form-container textarea:focus {
   background-color: #ddd;
   outline: none;
+}
+
+h3 {
+  font-family: "Dosis";
+  text-align: center;
 }
 
 /* Check Container */
