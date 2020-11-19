@@ -38,17 +38,7 @@ body {font-family: 'Helvetica', sans-serif;}
 }
 
 @media screen and (min-width: 1050px) {
-    .form-container {
-        max-width: 300px;
-    }
-    .chat-popup {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-    }
-
-    .open-button {
+        .open-button {
         background-color: rgba(22, 33, 51, 0.8);
         border: none;
         border-radius: 60%;
@@ -63,13 +53,23 @@ body {font-family: 'Helvetica', sans-serif;}
         color: #f1f1f1;
         z-index: 50;
       }
+
+      .form-container {
+        max-width: 300px;
+    }
+      .chat-popup {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
 /* Name, Email, Question */
 label {
-font-size: medium;
-margin-left: 10px;
-font-family: 'Helvetica';
+  font-size: medium;
+  margin-left: 10px;
+  font-family: 'Helvetica';
 } 
 
 /* Full-width textarea */
