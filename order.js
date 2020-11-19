@@ -1,21 +1,9 @@
 window.onload = function () {
   const colour_btn = document.querySelectorAll(".colours .colour");
-  const view_btn = document.querySelectorAll(".view .viewtype");
-  const imageEl = document.querySelector(".imagery .image");
+  const exterior = document.querySelector(".imagery .exterior");
+  const interior = document.querySelector(".imagery .interior");
 
-  //Click-function that frames the current active button (interior/exterior)//
-  for (let i = 0; i < view_btn.length; i++) {
-    let btn = view_btn[i];
-
-    btn.addEventListener("click", function () {
-      document
-        .querySelector(".view .viewtype.selected")
-        .classList.remove("selected");
-      this.classList.add("selected");
-    });
-  }
-
-  //click-function that changes colours of buttons - and also changes images based on which button is clicked //
+  //click-function that changes the colours of buttons - and also changes images based on which button is clicked //
   for (let i = 0; i < colour_btn.length; i++) {
     let btn = colour_btn[i];
 
@@ -24,7 +12,18 @@ window.onload = function () {
         .querySelector(".colours .colour.selected")
         .classList.remove("selected");
       this.classList.add("selected");
-      imageEl.src = "images/customize/electric-" + this.dataset.name + ".png";
+      exterior.src = "images/customize/electric-" + this.dataset.name + ".png";
+    });
+  }
+  for (let i = 0; i < colour_btn.length; i++) {
+    let btn = colour_btn[i];
+
+    btn.addEventListener("click", function () {
+      document
+        .querySelector(".colours .colour.selected")
+        .classList.remove("selected");
+      this.classList.add("selected");
+      interior.src = "images/customize/interior-" + this.dataset.name + ".png";
     });
   }
 };
