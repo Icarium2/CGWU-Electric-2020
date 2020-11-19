@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/chat.css"> 
     <link rel="stylesheet" href="/styles/buttons.css">
     <link rel="stylesheet" href="/styles/menu.css">
     <link rel="stylesheet" href="/styles/header.css">
@@ -14,6 +16,33 @@
     <title>Electric</title>
 </head>
 <body>
+    <!--<button class="open-button" onclick="openForm()" >Chat</button>-->
+<button class="open-button" onclick="openForm()"><i class="far fa-comment-dots"></i></button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Name</b></label>
+    <textarea placeholder="..." name="name" required></textarea>
+    
+    <label for="msg"><b>Email</b></label>
+    <textarea placeholder="..." name="email" required></textarea>
+    
+    <label for="msg"><b>Question</b></label>
+    <textarea placeholder="..." name="question" required></textarea>
+    
+    <!--Put 'checked="checked"' after type=checkbox if we want it checked be default--> 
+    <label class="container">Send me updates
+  	<input type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
     <header>
         <nav>
             <div class="logo">
@@ -63,6 +92,7 @@
                 <a class="button" type="button" href="/order.html">Get early access</a>
             </div>
         </section>
+
     </header>
     <main> 
         <section class="one section-container section-style-desk">
