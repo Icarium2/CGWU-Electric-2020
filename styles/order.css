@@ -83,12 +83,12 @@ button:hover {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
-button.size {
+button.viewtype {
   position: relative;
   z-index: 1;
 }
-button.size::before,
-button.size::after {
+button.viewtype::before,
+button.viewtype::after {
   content: "";
   position: absolute;
   top: -3px;
@@ -97,16 +97,16 @@ button.size::after {
   bottom: -3px;
   transition: 0.4s;
 }
-button.size::after {
+button.viewtype::after {
   z-index: -1;
   background-color: #fff;
   border: 3px solid #eee;
 }
-button.size::before {
+button.viewtype::before {
   z-index: -2;
-  background-image: linear-gradient(to right, #ed008d, #8d00ed);
+  background-image: linear-gradient(to right, #e0451e, #f7f31a);
 }
-button.size.selected::after {
+button.viewtype.selected::after {
   top: 0;
   left: 0;
   right: 0;
@@ -148,8 +148,8 @@ button.size.selected::after {
   background-image: linear-gradient(
     to right,
     transparent 50%,
-    #ed008d 50%,
-    #8d00ed 100%
+    #f35618 50%,
+    #f5e618 100%
   );
   background-size: 200%;
   background-position: 0% 50%;
