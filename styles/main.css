@@ -1,13 +1,12 @@
-/*Gives the same style for contentboxes where text and bottons are placed (section one, three and five). Centering the content*/
+/*Gives the same style for contentboxes on mobil where text and bottons are placed (section one, three and five). Centering the content*/
 .content {
+  color: var(--font-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--font-color);
 }
-
-.content-box{
+.content-box {
   padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
@@ -15,27 +14,21 @@
 .one .img-container {
   height: 100vh;
 }
-
 .text-one {
   padding-bottom: 2rem;
+  max-width: 603px;
 }
-
-
 .text-one h2 {
   padding-bottom: 2rem;
   font-weight: 400;
 }
-
 .text-one h2 span {
   font-weight: bold;
 }
-
-.text-one p {
+.text-one {
   font-weight: 200;
   line-height: 2rem;
   height: 100%;
-  max-width: 475px;
-  min-width: 300px;
 }
 
 /*styles for the section two */
@@ -44,27 +37,23 @@
 }
 
 /*styles for the section three */
-
+.three .big-box {
+  height: 100%;
+}
+.three .img-container {
+  height: 50%;
+}
 .text-three {
   padding-bottom: 2rem;
 }
-
 .text-three p {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 2.2rem;
 }
 
-.text-three h2 {
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-
-
 /*styles for the section three */
-
-.four{
+.four {
   height: 100vh;
 }
 .four .img-container {
@@ -72,7 +61,6 @@
   position: relative;
   background-color: rgb(34, 34, 34);
 }
-
 .four .content-on-img {
   position: absolute;
   width: 100%;
@@ -84,158 +72,168 @@
   bottom: 0;
   color: var(--font-color-light);
 }
-
 .four .content-on-img h2 {
   margin-bottom: 23rem;
 }
-
 .four .content-on-img .button {
   margin-top: 2rem;
 }
 
 /*styles for the section five */
-
 .five .img-container {
   height: 100%;
 }
-
 .text-five {
   padding-bottom: 2rem;
+  max-width: 627px;
 }
-
 .text-five h2 {
   padding-bottom: 1rem;
 }
-
 .text-five p {
   font-weight: 200;
   line-height: 2rem;
-  height: 100%;
-  max-width: 500px;
 }
 
-
-
 @media screen and (min-width: 800px) {
-
-  .content-box{
-    padding: 0rem 0rem 0rem 0rem;
+  .section-style-desk .content-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
   }
-  .content {
+  .section-style-desk .content {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
-
-  h2 {
-    padding-top: 0;
+  .section-style-desk .content .text-one,
+  .text-five {
+    padding-bottom: 0px;
   }
-
-  .text-five,
-  .text-one,
-  .text-three {
-    padding-bottom: 0;
+  .content-box {
+    padding: 2rem 2.5rem 2rem 2.5rem;
   }
-
-  /*styles for the section one */
-  .one{
-    display: flex;
+  .text-one {
+    max-width: 390px;
+    min-width: 300px;
+  }
+  .three .big-box {
     height: 100vh;
   }
+  .text-five {
+    max-width: 450px;
+  }
+}
 
-  .one .content {
+@media screen and (min-width: 1050px) {
+  .section-style-desk .content {
     height: 100%;
-    min-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-   
   }
-
-  .one .content-box{
+  .section-style-desk .content-box {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  } 
-
-  .text-one{
-    max-width: 320px;
-    
+  }
+  h2 {
+    padding-top: 0;
   }
 
+  /*styles for the section one */
+  .one {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+  }
+  .text-one {
+    max-width: 340px;
+    min-width: 340px;
+  }
   .one .img-container {
     height: 100vh;
-
   }
-
   .one .img-container img {
-     object-position: bottom;
+    object-position: bottom;
   }
-
-
-
   /*styles for the section two */
   .two .img-container {
     height: 100vh;
   }
 
-/*styles for the section three*/
-    .three {
-      height: 100vh;
-    }
-  
-    .text-three h2 {
-      text-align: start;
-    }
+  /*styles for the section three*/
+  .three .big-box {
+    min-height: 100vh;
+  }
+  .three .img-container {
+    min-height: 50%;
+    position: relative;
+  }
+  .three .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    padding: 0rem 3rem 3rem 0rem;
+  }
+  .three .content-box {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .text-three {
+    padding-bottom: 2rem;
+  }
 
-    .three .big-box {
-      display: flex;
-      height: 100vh;
-      
-    }
+  /*styles for the section four */
+  .four .content-on-img h2 {
+    margin-bottom: 27rem;
+  }
+  .four .content-on-img .button {
+    margin-top: 6rem;
+  }
 
-    .three .img-container{
-      width: 1000px;
-    }
-  
-    
-
-
-    /*styles for the section four */
-    .four .content-on-img h2 {
-      margin-bottom: 27rem;
-    }
-    .four .content-on-img .button {
-      margin-top: 6rem;
-    }
-  
   /*styles for the section five */
+
+  .five {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+  }
+  .text-five {
+    max-width: 390px;
+    min-width: 390px;
+  }
+
+  /*
   .five {
     height: 100%;
   }
-
   .five .content {
     height: 100%;
   }
-
   .five .img-container {
     height: 100vh;
   }
+  .five .img-container img {
+    object-position: 60% 80%;
+  }*/
 
-
-  @media screen and (min-width: 1000px) {
+  /*@media screen and (min-width: 1000px) {
     .content-box{
       padding: 2rem 0.5rem 2rem 0.5rem;
   
     }
 
-    .text-one{
-      max-width: 340px;
-      
-    }
+   
   
   }
-
-
-    
+*/
+}
