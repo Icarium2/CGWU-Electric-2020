@@ -5,11 +5,9 @@ nav {
   min-height: 5vh;
   position: fixed;
   width: 100%;
-  max-width: 2000px;
   z-index: 30;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   background-color: rgba(22, 33, 51, 0.8);
-  max-width: 2000px;
 }
 
 .logo {

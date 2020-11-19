@@ -1,14 +1,13 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: "Helvetica";
   font-size: 18px;
-  background-color: var(--main-bg);
-  max-width: 2000px;
+  background-color: white; /*var(--dark-blue);*/
 }
 
 @media screen and (min-width: 1050px) {
@@ -35,4 +34,8 @@ h2 {
   font-weight: 500;
   font-size: 2.8rem;
   line-height: 4rem;
+}
+
+.wrapper-max-width {
+  max-width: 1400px;
 }

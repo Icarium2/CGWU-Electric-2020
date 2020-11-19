@@ -1,7 +1,11 @@
-body {font-family: 'Helvetica', sans-serif;}
-* {box-sizing: border-box;}
+body {
+  font-family: "Helvetica", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
 
-/* Button used to open the chat form - fixed at the bottom of the page */ 
+/* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
   background-color: rgba(22, 33, 51, 0.8);
   border: none;
@@ -38,39 +42,39 @@ body {font-family: 'Helvetica', sans-serif;}
 }
 
 @media screen and (min-width: 1050px) {
-        .open-button {
-        background-color: rgba(22, 33, 51, 0.8);
-        border: none;
-        border-radius: 60%;
-        cursor: pointer;
-        opacity: 0.9;
-        position: fixed;
-        bottom: 40px;
-        right: 60px;
-        width: 55px;
-        height: 55px;
-        font-size: 33px;
-        color: #f1f1f1;
-        z-index: 50;
-      }
+  .open-button {
+    background-color: rgba(22, 33, 51, 0.8);
+    border: none;
+    border-radius: 60%;
+    cursor: pointer;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    width: 55px;
+    height: 55px;
+    font-size: 33px;
+    color: #f1f1f1;
+    z-index: 50;
+  }
 
-      .form-container {
-        max-width: 300px;
-    }
-      .chat-popup {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-    }
+  .form-container {
+    max-width: 300px;
+  }
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
 }
 
 /* Name, Email, Question */
 label {
   font-size: medium;
   margin-left: 10px;
-  font-family: 'Helvetica';
-} 
+  font-family: "Helvetica";
+}
 
 /* Full-width textarea */
 .form-container textarea {
@@ -92,7 +96,7 @@ label {
 
 /* Check Container */
 .container {
- display: block;
+  display: block;
   position: relative;
   margin-bottom: 12px;
   cursor: pointer;
@@ -101,7 +105,7 @@ label {
 
 /* Check Mark */
 .container input:checked ~ .checkmark {
-  background-color: #31486F;
+  background-color: #31486f;
 }
 
 /* Set a style for the send button */
@@ -113,16 +117,17 @@ label {
   border: none;
   cursor: pointer;
   width: 100%;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   opacity: 0.8;
 }
 
 /* background color to the cancel button */
 .form-container .cancel {
-  background-color: #31486F;
+  background-color: #31486f;
 }
 
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
+.form-container .btn:hover,
+.open-button:hover {
   opacity: 1;
 }
