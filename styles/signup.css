@@ -12,24 +12,28 @@
   line-height: 1.8rem;
   padding: 1rem 0rem 1rem 0rem;
   font-family: "Helvetica";
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2rem;
 }
 .form-container-sign-up {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   background-color: rgb(201, 206, 215);
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 .form-container-sign-up input[type="text"],
 input[type="email"],
 .buttom-sign-up {
   width: 100%;
-  padding: 0.5rem;
-  margin: 0rem 0rem 1rem 0rem;
-  border-radius: 0.2rem;
+  padding: 0.7rem;
+  margin: 0.3rem 0rem 1rem 0rem;
+  border-radius: 0.5rem;
   font-size: 0.9rem;
   border: none;
 }
+
 input[type="text"],
 input[type="email"] {
   transition: 0.1s box-shadow ease-in-out;
@@ -38,7 +42,7 @@ input[type="email"] {
 input[type="text"]:focus,
 input[type="email"]:focus {
   outline: none;
-  box-shadow: 0 0 3px 3px #162133;
+  box-shadow: 0 0 0.1rem 0.1rem #1621339f;
 }
 .form-container-sign-up label {
   font-size: 1rem;
@@ -53,21 +57,24 @@ input[type="checkbox"] {
 }
 .container-checkbox label {
   font-size: 0.7rem;
-  margin: 0.1rem 0rem 1rem 0rem;
+  margin: 0.3rem 0rem 1rem 0rem;
 }
 .buttom-sign-up {
-  background-color: #162133;
+  background-color: var(--dark-blue);
   color: white;
+}
+.buttom-sign-up:hover {
+  opacity: 80%;
 }
 
 @media screen and (min-width: 800px) {
   .sign-up {
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(201, 206, 215); /*rgb(228, 228, 228);*/
     padding: 2rem;
   }
   .form-container-sign-up {
-    padding: 2rem;
-    margin: 5px 0 22px 0;
+    /*padding: 3rem;*/
+    margin: 1rem 0 1rem 0;
     background-color: rgb(201, 206, 215);
   }
 }

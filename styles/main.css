@@ -103,6 +103,9 @@ main {
 .five .img-container {
   height: 100%;
 }
+.five .img-container img {
+  object-position: bottom;
+}
 .text-five {
   padding-bottom: 2rem;
   max-width: 627px;
