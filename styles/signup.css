@@ -11,15 +11,16 @@
 .sign-up h3 {
   line-height: 1.8rem;
   padding: 1rem 0rem 1rem 0rem;
+  font-family: "Helvetica";
 }
-.form-container {
+.form-container-sign-up {
   width: 100%;
   max-width: 400px;
   background-color: rgb(201, 206, 215);
   padding: 1rem;
   border-radius: 0.5rem;
 }
-.form-container input[type="text"],
+.form-container-sign-up input[type="text"],
 input[type="email"],
 .buttom-sign-up {
   width: 100%;
@@ -39,8 +40,9 @@ input[type="email"]:focus {
   outline: none;
   box-shadow: 0 0 3px 3px #162133;
 }
-.form-container label {
+.form-container-sign-up label {
   font-size: 1rem;
+  margin-left: 0rem;
 }
 .checkbox {
   display: flex;
@@ -63,7 +65,7 @@ input[type="checkbox"] {
     background-color: rgb(228, 228, 228);
     padding: 2rem;
   }
-  .form-container {
+  .form-container-sign-up {
     padding: 2rem;
     margin: 5px 0 22px 0;
     background-color: rgb(201, 206, 215);
