@@ -6,27 +6,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1600px;
+  margin: 0 auto;
 }
-
-.hero .img-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
 .hero-content {
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .hero-content h1 {
-  margin-bottom: 9rem;
+  margin-bottom: 4rem;
   opacity: 0;
   transition: opacity ease-in 0.7s 0.5s;
 }
-
 .date {
   text-align: center;
   padding-bottom: 2rem;
@@ -35,8 +28,21 @@
   opacity: 0;
   transition: opacity 1s 0.2s;
 }
-
+.hero .img-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
 .hero .img-container img {
   object-position: bottom;
   /*opacity: 70%;*/
+}
+
+@media screen and (min-width: 1000px) {
+  .hero .img-container img {
+    object-position: 70% 96%;
+  }
+  .hero-content .button {
+    margin-bottom: 15rem;
+  }
 }
