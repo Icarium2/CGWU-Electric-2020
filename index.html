@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/hero.css">
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/signup.css">
     <link rel="stylesheet" href="/styles/footer.css">
     <title>Electric</title>
 </head>
@@ -193,7 +194,7 @@
             </div>
          </section>
          <section class="five section-container section-style-desk">
-            <section class="content-box">
+             <section class="content-box">
                 <section class="content">
                     <div class="text-five">
                         <h2>History</h2>
@@ -202,7 +203,7 @@
                     <a  class="button" type="button" href="/order.html">Pre-order now</a>
                 </section>
             </section>
-            <div class="img-container first-img">
+            <div class="img-container">
                 <img
                 src="images/section5/1_w300.png"
                 srcset="
@@ -216,7 +217,32 @@
                   "
                 alt="My perfect alt text"
               />
-            </div>   
+            </div> 
+        </section>
+        <section class="sign-up">
+            <h3>Sign up to get early accsess and more details about Electric!</h3>
+            <form action="index.html" class="form-container">
+                <div class="first-name">
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="fname" required placeholder="Enter your first name"></input>
+                </div>
+                <div class="last-name">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname" required placeholder="Enter your last name"></input>
+                </div>
+                <div class="">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email"></input>
+                </div>
+                <div class="container-checkbox">
+                    <label class="checkbox">Yes, I would like to receive promotions from Electric a brand of the Peurgot Company. I confirm that I’m 16 years or older. I consent to let Peurgot Company to process my personal data in order to provide me with personalised promotions on email in accordance with the Privacy notice.
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                </div>
+                <button type="submit" class="buttom-sign-up">Submit</button>
+            </form>
+        </section> 
         </main>  
         <footer>
             <ul>
