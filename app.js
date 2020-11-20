@@ -35,3 +35,8 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+
+
+function show_alert() {
+  alert("Thank you for signing up!");
+}

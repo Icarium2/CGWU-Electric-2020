@@ -37,7 +37,7 @@ input[type="email"] {
 input[type="text"]:focus,
 input[type="email"]:focus {
   outline: none;
-  box-shadow: 0 0 3px 3px rgb(55, 53, 53);
+  box-shadow: 0 0 3px 3px #162133;
 }
 .form-container label {
   font-size: 1rem;
