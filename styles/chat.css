@@ -41,7 +41,19 @@ body {
   border-color: rgb(199, 198, 198);
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 768px) {
+  .form-container {
+    max-width: 300px;
+  }
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media screen and (min-width: 700px) {
   .open-button {
     background-color: rgba(22, 33, 51, 0.8);
     border: none;
@@ -58,15 +70,6 @@ body {
     z-index: 50;
   }
 
-  .form-container {
-    max-width: 300px;
-  }
-  .chat-popup {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
 }
 
 /* Name, Email, Question */
