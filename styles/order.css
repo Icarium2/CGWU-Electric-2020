@@ -4,40 +4,52 @@
   box-sizing: border-box;
   font-family: "Helvetica";
 }
+body {
+  background-image: linear-gradient(to right, #162133, rgb(31, 72, 87));
+}
+
+.banner {
+  min-height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.logo {
+  cursor: pointer;
+}
 
 .product-detail {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .images {
   max-width: 100%;
-  width: 100%;
+  width: 100vw;
   display: flex;
   transition: 0.4s;
-  background-color: black;
+  background-color: white;
+  border: 1px solid black;
 }
 .exterior {
   width: 50%;
   height: 50vh;
-  object-position: top;
   animation: fadein 1s ease-in-out forwards;
   animation-delay: 0.5s;
   opacity: 0;
   object-fit: cover;
-  object-position: 50% 50%;
 }
 .interior {
   width: 50%;
   height: 50vh;
-  object-position: top;
   animation: fadein 1s ease-in-out forwards;
   animation-delay: 0.5s;
   opacity: 0;
   object-fit: cover;
-  object-position: 50% 50%;
 }
 
 .detail {
@@ -46,21 +58,15 @@
   padding: 50px;
 }
 
-.detail h1 {
-  color: #212121;
-  font-size: 32px;
-  font-weight: 900;
-}
 .detail h2 {
-  color: #53565a;
+  color: white;
   font-size: 22px;
   font-weight: 700px;
 }
-.detail h3 {
-  color: #53565a;
+.banner h3 {
+  color: white;
   font-size: 22px;
   font-weight: 300;
-  margin-bottom: 50px;
 }
 
 .btn_grid {
@@ -84,7 +90,7 @@ button {
   background: none;
   cursor: pointer;
   border: 2px solid #eee;
-  color: #313131;
+  color: white;
   font-size: 20px;
   font-weight: 700;
   transition: 0.4s;
@@ -92,36 +98,6 @@ button {
 }
 button:hover {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-}
-
-button.viewtype {
-  position: relative;
-  z-index: 1;
-}
-button.viewtype::before,
-button.viewtype::after {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  right: -3px;
-  bottom: -3px;
-  transition: 0.4s;
-}
-button.viewtype::after {
-  z-index: -1;
-  background-color: #fff;
-  border: 3px solid #eee;
-}
-button.viewtype::before {
-  z-index: -2;
-  background-image: linear-gradient(to right, #e0451e, #f7f31a);
-}
-button.viewtype.selected::after {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .colours .btn_wrap .black.selected {
@@ -141,7 +117,7 @@ button.viewtype.selected::after {
 
 .colours .btn_wrap .yellow.selected {
   background-color: #ffce00;
-  color: #212121;
+  color: rgb(0, 0, 0);
 }
 
 .colours .btn_wrap .coral.selected {
@@ -154,23 +130,6 @@ button.viewtype.selected::after {
   color: #212121;
 }
 
-.submit {
-  margin-top: 50px;
-  background-image: linear-gradient(
-    to right,
-    transparent 50%,
-    #f35618 50%,
-    #f5e618 100%
-  );
-  background-size: 200%;
-  background-position: 0% 50%;
-  transition: 0.8s;
-}
-.submit:hover {
-  color: #fff;
-  background-position: 100% 50%;
-}
-
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -180,15 +139,28 @@ button.viewtype.selected::after {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 868px) {
   .images {
     flex-direction: column;
-    max-width: 100%;
-    width: 100%;
   }
-  .interior .exterior {
-    max-width: 100%;
-    height: 50%;
+  .interior,
+  .exterior {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100vw;
+    height: 30vh;
+  }
+
+  .btn_grid {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .detail {
+    position: relative;
+    width: 100%;
+    height: 40vh;
   }
 }

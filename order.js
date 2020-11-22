@@ -2,6 +2,7 @@ window.onload = function () {
   const colour_btn = document.querySelectorAll(".colours .colour");
   const exterior = document.querySelector(".images .exterior");
   const interior = document.querySelector(".images .interior");
+  const home_btn = document.querySelector(".banner .logo");
 
   //click-function that changes the colours of buttons - and also changes images based on which button is clicked //
   for (let i = 0; i < colour_btn.length; i++) {
@@ -16,15 +17,12 @@ window.onload = function () {
     });
   }
 
-  //The same function, except it gets the interior-images instead of the exterior ones //
+  //Another function to simply get the images of the interior aswell, based on which button is clicked.//
   for (let i = 0; i < colour_btn.length; i++) {
     let btn = colour_btn[i];
 
     btn.addEventListener("click", function () {
-      document
-        .querySelector(".colours .colour.selected")
-        .classList.remove("selected");
-      this.classList.add("selected");
+      document;
       interior.src = "images/customize/interior-" + this.dataset.name + ".png";
     });
   }
