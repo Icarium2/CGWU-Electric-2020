@@ -83,7 +83,7 @@ label {
 .form-container textarea {
   width: 100%;
   padding: 15px;
-  margin: 5px 0 5px 0;
+  margin: 5px 0 px 0;
   border: none;
   border-radius: 40px;
   background: #ffffff;
@@ -101,9 +101,11 @@ min-height: 90px;
   outline: none;
 }
 
-h3 {
-  font-family: "Dosis";
+#ask {
+  font-family: 'Helvetica';
   text-align: center;
+  font-size: 34px;
+  font-weight: 350;
 }
 
 /* Check Container */
@@ -115,22 +117,16 @@ h3 {
   font-size: 16px;
 }
 
-/* Check Mark */
-.container input:checked ~ .checkmark {
-  background-color: #31486f;
-}
-
-/* Set a style for the send button */
+/* Set a style for the SUBMIT button */
 .form-container .btn {
-  background-color: #162133;
+  background-color: var(--dark-blue);
   color: white;
   padding: 16px 20px;
-  border-radius: 10px;
+  border-radius: 30px;
   border: none;
   cursor: pointer;
   width: 100%;
   margin-bottom: 10px;
-  opacity: 0.8;
 }
 
 /* background color to the cancel button */
@@ -141,5 +137,5 @@ h3 {
 /* Add some hover effects to buttons */
 .form-container .btn:hover,
 .open-button:hover {
-  opacity: 1;
+  opacity: 0.8;
 }

@@ -1,6 +1,5 @@
 .button {
-  /*padding: 0.3rem 2rem 0.3rem 2rem;*/
-  border-radius: 0.4rem;
+  border-radius: 1rem;
   text-decoration: none;
   font-weight: 200px;
   padding: 0.3rem 2rem 0.3rem 2rem;
@@ -19,7 +18,6 @@
 }
 
 .hero .button {
-  /*border: 1px solid white;*/
   color: var(--dark-blue);
   background-color: white;
   opacity: 0;
@@ -27,13 +25,12 @@
 }
 
 .one .button {
-  border: 1px solid var(--dark-blue);
-  color: var(--dark-blue);
+  border: 1px solid white;
+  color: white;
 }
-
-.three .button {
-  border: 1px solid var(--dark-blue);
-  color: var(--dark-blue);
+.five .button {
+  border: 1px solid white;
+  color: white;
 }
 
 .four .button {
@@ -41,14 +38,8 @@
   color: white;
 }
 
-.five .button {
-  border: 1px solid var(--dark-blue);
-  color: var(--dark-blue);
-}
-
 @media screen and (min-width: 700px) {
   .button {
-    border-radius: 0.4rem;
     text-decoration: none;
     font-weight: 200px;
     padding: 0.3rem 3rem 0.3rem 3rem;

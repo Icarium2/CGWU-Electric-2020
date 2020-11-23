@@ -1,12 +1,16 @@
 main {
+  background-color: var(--dark-blue);
+  margin: 0 auto;
+}
+
+.section-container {
   max-width: 1600px;
-  background-color: rgb(232, 232, 232);
   margin: 0 auto;
 }
 
 /*Gives the same style for contentboxes on mobil where text and bottons are placed (section one, three and five). Centering the content*/
 .content {
-  color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +22,8 @@ main {
 
 /*styles for the section one */
 .one .img-container {
-  object-position: 20% 100%;
+  width: 100%;
+  height: 100%;
 }
 .text-one {
   padding-bottom: 2rem;
@@ -142,14 +147,17 @@ main {
     max-width: 390px;
     min-width: 300px;
   }
-  .one .img-container {
-    min-height: 100vh;
-  }
   .three .big-box {
     height: 100vh;
   }
   .text-five {
     max-width: 450px;
+  }
+  .three .first-img img {
+    object-position: 60% 40%;
+  }
+  .one .img-container img {
+    object-position: 20%;
   }
 }
 
@@ -161,9 +169,15 @@ main {
     align-items: center;
     justify-content: space-between;
   }
-  .section-style-desk .content-box {
+  .one .content-box {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+  }
+  .five .content-box {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    padding-left: 3rem;
   }
   h2 {
     padding-top: 0;
@@ -172,43 +186,53 @@ main {
   /*styles for the section one */
   .one {
     display: flex;
-    justify-content: center; /*flex-end;*/
+    justify-content: center;
     height: 100vh;
+    margin: 4rem;
   }
   .text-one {
     max-width: 340px;
     min-width: 340px;
   }
   .one .img-container {
-    height: 100vh;
+    height: 100%;
+    max-width: 600px;
   }
   .one .img-container img {
-    object-position: bottom;
+    object-position: 100% 100%;
   }
+
   /*styles for the section two */
   .two .img-container {
     height: 100vh;
   }
 
   /*styles for the section three*/
+
+  .three {
+    height: 120vh;
+  }
+
   .three .big-box {
-    min-height: 100vh;
+    height: 120vh;
   }
   .three .img-container {
-    min-height: 50%;
     position: relative;
   }
-  .three .content {
+  .three .first-img {
+    height: 60%;
+  }
+
+  .three .img-container .three .content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     padding: 0rem 3rem 3rem 0rem;
   }
   .three .content-box {
     position: absolute;
     z-index: 100;
-    height: 100%;
+    height: 120vh;
     width: 100%;
     max-width: 1600px;
     display: flex;

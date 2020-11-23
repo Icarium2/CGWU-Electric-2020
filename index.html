@@ -21,7 +21,7 @@
 
     <div class="chat-popup" id="myForm">
         <form action="index.html" class="form-container">
-            <h2>Ask a question</h2>
+            <h3 id="ask">Ask a question</h3>
 
             <label for="msg"><b>Name</b></label>
             <textarea placeholder="..." name="name" required></textarea>
@@ -33,12 +33,11 @@
             <textarea class="question" placeholder="..." name="question" required></textarea>
     
             <!--Put 'checked="checked"' after type=checkbox if we want it checked be default--> 
-            <label class="container">Get updates and early access
-  	        <input type="checkbox">
-  	        <span class="checkmark"></span>
-	        </label>
+            <label class="container">
+  	        <input type="checkbox" class="checkmark">Get updates and early access
+  	        </label>
 
-            <button type="submit" class="btn">SEND</button>
+            <button type="submit" class="btn">SUBMIT</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
     </div>
@@ -69,7 +68,7 @@
             <div class="img-container">
                 <picture>
                     <source
-                    media="(min-width: 1000px)"
+                    media="(min-width: 1400px)"
                     srcset="images/hero/hero_w2000.png"
                     >
                     <source
@@ -80,7 +79,7 @@
                     media="(min-width: 500px)"
                     srcset="images/hero/hero_w700.png"
                     >
-                    <img src="images/hero/hero_w410.png" alt="Electric driving on a street" />
+                    <img src="images/hero/hero_w450.png" alt="Electric driving on a street" />
                  </picture>
             </div>
             <div class="hero-content" id="fademe">
@@ -112,16 +111,16 @@
              </picture>-->
             <picture>
                 <source
-                  media="(min-width: 1400px)"
-                  srcset="images/section1/1_w2000.png"
+                  media="(min-width: 1050px)"
+                  srcset="images/section1/1_w700.png"
                 >
                 <source
-                  media="(min-width: 900px)"
+                  media="(min-width: 800px)"
                   srcset="images/section1/1_w1000.png"
                 >
                 <source
-                  media="(min-width: 700px)"
-                  srcset="images/section1/1_w700.png"
+                  media="(min-width: 500px)"
+                  srcset="images/section1/1_w600.png"
                 >
                 <img src="images/section1/1_w450.png" alt="Car at night" />
             </picture>
@@ -130,7 +129,7 @@
                <section class="content">
                    <div class="text-one">
                        <h2>You are special.<br> Electric.</h2>
-                       <p>Peugeot is bringing car driving to the next level. We are on the go for the future. Our aim is to become one of the world’s most innovative companies. And now we are proud to present our car for the future: Electric.</p>
+                       <p>Peugeot is bringing driving to the next level. We are on the go for the future. Our aim is to become one of the world’s most innovative companies. And now we are proud to present our motorcycle for the future: Electric.</p>
                     </div>
                     <a  class="button" type="button" href="/order.html">Pre-order now</a>
                 </section>
@@ -142,9 +141,11 @@
                 src="images/section2/2_w450.png"
                 srcset="
                 images/section2/2_w700.png 750w,
-                images/section2/2_W1000.png 1050w
+                images/section2/2_w1000.png 1050w
+                images/section2/2_w2000.png 1400w
                 "
                 sizes="
+                (min-width: 1400px) 1400px,
                   (min-width: 1050px) 1050px,
                   (min-width: 700px) 750px, 100vw
                   "
@@ -165,42 +166,64 @@
                 <div class="img-container first-img">
                     <picture>
                         <source
-                        media="(min-width: 1000px)"
-                        srcset=""
+                        media="(min-width: 1400px)"
+                        srcset="images/section3/3utsida_w2000.png"
                         >
                         <source
-                        media="(min-width: 700px)"
-                        srcset="images/section3/3_utsida_w1000.png"
+                        media="(min-width: 1000px)"
+                        srcset="images/section3/3utsida_w1000.png"
+                        >
+                        <source
+                        media="(min-width: 800px)"
+                        srcset="images/section3/3utsida_w800.png"
                         >
                         <source
                         media="(min-width: 500px)"
-                        srcset="images/section3/3_utsida_w700.png"
+                        srcset="images/section3/3utsida_w700.png"
                         >
-                        <img src="images/section3/3_utsida_w450.png" alt="Car at night" />
+                        <img src="images/section3/3utsida_w450.png" alt="Car at night" />
                      </picture>
                 </div>
                 <div class="img-container second-img">
                     <picture>
                         <source
-                        media="(min-width: 1000px)"
-                        srcset=""
+                        media="(min-width: 1400px)"
+                        srcset="images/section3/3insida_w2000.png"
                         >
                         <source
-                        media="(min-width: 700px)"
-                        srcset="images/section3/3_insida_w1000.png"
+                        media="(min-width: 1000px)"
+                        srcset="images/section3/3insida_w1000.png"
+                        >
+                        <source
+                        media="(min-width: 800px)"
+                        srcset="images/section3/3insida_w800.png"
                         >
                         <source
                         media="(min-width: 500px)"
-                        srcset="images/section3/3_insida_w700.png"
+                        srcset="images/section3/3insida_w700.png"
                         >
-                        <img src="images/section3/3_insida_w450.png" alt="Car at night" />
+                        <img src="images/section3/3insida_450.png" alt="Car at night" />
                      </picture>
                 </div>
             </section>
          </section>
          <section class="four section-container">
             <div class="img-container">
-                <img sizes="(max-width: 300px) 100vw, 1400px" srcset="/images/" class="first">
+                <picture>
+                    <source
+                    media="(min-width: 1000px)"
+                    srcset=""
+                    >
+                    <source
+                    media="(min-width: 700px)"
+                    srcset=""
+                    >
+                    <source
+                    media="(min-width: 500px)"
+                    srcset="images/section4/4_w700.png"
+                    >
+                    <img src="images/section4/4_w450.png" alt="Car at night" />
+                 </picture>
                 <section class="content-on-img">
                      <h2>You are special.</h2>
                      <a  class="button" type="button" href="/order.html">Explore details</a>
@@ -218,48 +241,31 @@
                 </section>
             </section>
             <div class="img-container">
-                <picture>
+                 <picture>
                     <source
                     media="(min-width: 1000px)"
-                    srcset="images/section5/5ny_w2000.png"
+                    srcset="images/section5/5_w2000.png"
                     >
                     <source
                     media="(min-width: 700px)"
-                    srcset="images/section5/5ny_w1000.png"
+                    srcset="images/section5/5_w1000.png"
                     >
                     <source
                     media="(min-width: 500px)"
-                    srcset="images/section5/5ny_w700.png"
+                    srcset="images/section5/5_w700.png"
                     >
-                    <img src="images/section5/5ny_w300.png" alt="Car at night" />
+                    <img src="images/section5/5_w450.png" alt="Car at night" />
                  </picture>
-                <!--<img
-                src="images/section5/5ny_w300.png"
-                srcset="
-                images/section5/1_w450.png 450w,
-                images/section5/1_w700.png 750w,
-                images/section5/1_w1000.png 1050w
-                "
-                sizes="
-                  (min-width: 1050px) 1050px,
-                  (min-width: 700px) 750px, 100vw
-                  "
-                alt="My perfect alt text"
-              />-->
             </div> 
         </section>
         <section class="sign-up">
-            <h3>Sign up to get early accsess and more details about Electric!</h3>
+            <h3>Sign up to get early access and more details about Electric!</h3>
             <form class="form-container-sign-up" action="index.html" >
-                <div class="first-name">
-                    <label for="fname">First name</label>
-                    <input type="text" id="fname" name="fname" required placeholder="Enter your first name"></input>
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name"></input>
                 </div>
-                <div class="last-name">
-                    <label for="lname">Last name</label>
-                    <input type="text" id="lname" name="lname" required placeholder="Enter your last name"></input>
-                </div>
-                <div class="">
+                <div class="email">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required placeholder="Enter your email"></input>
                 </div>
