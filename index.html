@@ -123,7 +123,7 @@
                   media="(min-width: 700px)"
                   srcset="images/section1/1_w700.png"
                 >
-                <img src="images/section1/1_w450.png" alt="Car at night" />
+                <img src="images/section1/1w450.png" alt="Car at night" />
             </picture>
            </div>
            <section class="content-box">
@@ -208,7 +208,21 @@
          </section>
          <section class="four section-container">
             <div class="img-container">
-                <img sizes="(max-width: 300px) 100vw, 1400px" srcset="images/section4/4_w450.png" class="first">
+                <picture>
+                    <source
+                    media="(min-width: 1000px)"
+                    srcset=""
+                    >
+                    <source
+                    media="(min-width: 700px)"
+                    srcset=""
+                    >
+                    <source
+                    media="(min-width: 500px)"
+                    srcset="images/section4/4_w700.png"
+                    >
+                    <img src="images/section4/4_w450.png" alt="Car at night" />
+                 </picture>
                 <section class="content-on-img">
                      <h2>You are special.</h2>
                      <a  class="button" type="button" href="/order.html">Explore details</a>

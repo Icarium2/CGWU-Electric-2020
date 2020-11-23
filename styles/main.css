@@ -17,9 +17,10 @@ main {
 }
 
 /*styles for the section one */
-.one .img-container {
+/*.one .img-container {
   object-position: 20% 100%;
-}
+}*/
+
 .text-one {
   padding-bottom: 2rem;
   max-width: 603px;
@@ -154,6 +155,9 @@ main {
   .three .first-img img {
     object-position: 60% 40%;
   }
+  .one .img-container img {
+    object-position: 20%;
+  }
 }
 
 @media screen and (min-width: 1050px) {
@@ -185,9 +189,7 @@ main {
   .one .img-container {
     height: 100vh;
   }
-  .one .img-container img {
-    object-position: bottom;
-  }
+
   /*styles for the section two */
   .two .img-container {
     height: 100vh;
