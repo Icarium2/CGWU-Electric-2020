@@ -151,6 +151,9 @@ main {
   .text-five {
     max-width: 450px;
   }
+  .three .first-img img {
+    object-position: 60% 40%;
+  }
 }
 
 @media screen and (min-width: 1050px) {
@@ -191,24 +194,31 @@ main {
   }
 
   /*styles for the section three*/
+
+  .three {
+    height: 120vh;
+  }
+
   .three .big-box {
-    min-height: 100vh;
+    height: 120vh;
   }
   .three .img-container {
-    min-height: 50%;
     position: relative;
   }
-  .three .content {
+  .three .first-img {
+    height: 60%;
+  }
+
+  .three .img-container .three .content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     padding: 0rem 3rem 3rem 0rem;
   }
   .three .content-box {
     position: absolute;
     z-index: 100;
-    height: 100%;
+    height: 120vh;
     width: 100%;
     max-width: 1600px;
     display: flex;
