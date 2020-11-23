@@ -7,7 +7,7 @@
 body {
   font-family: "Helvetica";
   font-size: 18px;
-  background-color: white; /*var(--dark-blue);*/
+  background-color: var(--dark-blue);
 }
 
 @media screen and (min-width: 1050px) {

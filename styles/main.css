@@ -1,12 +1,16 @@
 main {
+  background-color: var(--dark-blue);
+  margin: 0 auto;
+}
+
+.section-container {
   max-width: 1600px;
-  background-color: rgb(232, 232, 232);
   margin: 0 auto;
 }
 
 /*Gives the same style for contentboxes on mobil where text and bottons are placed (section one, three and five). Centering the content*/
 .content {
-  color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,10 +21,10 @@ main {
 }
 
 /*styles for the section one */
-/*.one .img-container {
-  object-position: 20% 100%;
-}*/
-
+.one .img-container {
+  width: 100%;
+  height: 100%;
+}
 .text-one {
   padding-bottom: 2rem;
   max-width: 603px;
@@ -143,9 +147,6 @@ main {
     max-width: 390px;
     min-width: 300px;
   }
-  .one .img-container {
-    min-height: 100vh;
-  }
   .three .big-box {
     height: 100vh;
   }
@@ -168,9 +169,15 @@ main {
     align-items: center;
     justify-content: space-between;
   }
-  .section-style-desk .content-box {
+  .one .content-box {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+  }
+  .five .content-box {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    padding-left: 3rem;
   }
   h2 {
     padding-top: 0;
@@ -179,15 +186,20 @@ main {
   /*styles for the section one */
   .one {
     display: flex;
-    justify-content: center; /*flex-end;*/
+    justify-content: center;
     height: 100vh;
+    margin: 4rem;
   }
   .text-one {
     max-width: 340px;
     min-width: 340px;
   }
   .one .img-container {
-    height: 100vh;
+    height: 100%;
+    max-width: 600px;
+  }
+  .one .img-container img {
+    object-position: 100% 100%;
   }
 
   /*styles for the section two */
