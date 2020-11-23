@@ -21,7 +21,7 @@
 
     <div class="chat-popup" id="myForm">
         <form action="index.html" class="form-container">
-            <h2>Ask a question</h2>
+            <h3 id="ask">Ask a question</h3>
 
             <label for="msg"><b>Name</b></label>
             <textarea placeholder="..." name="name" required></textarea>
@@ -33,12 +33,11 @@
             <textarea class="question" placeholder="..." name="question" required></textarea>
     
             <!--Put 'checked="checked"' after type=checkbox if we want it checked be default--> 
-            <label class="container">Get updates and early access
-  	        <input type="checkbox">
-  	        <span class="checkmark"></span>
-	        </label>
+            <label class="container">
+  	        <input type="checkbox" class="checkmark">Get updates and early access
+  	        </label>
 
-            <button type="submit" class="btn">SEND</button>
+            <button type="submit" class="btn">SUBMIT</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
     </div>
