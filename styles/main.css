@@ -1,16 +1,11 @@
 main {
-  background-color: var(--dark-blue);
-  margin: 0 auto;
-}
-
-.section-container {
-  max-width: 1600px;
+  background-color: var(--light-blue); /*rgb(199, 197, 195)*/
   margin: 0 auto;
 }
 
 /*Gives the same style for contentboxes on mobil where text and bottons are placed (section one, three and five). Centering the content*/
 .content {
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +26,6 @@ main {
 }
 .text-one h2 {
   padding-bottom: 2rem;
-  font-weight: 400;
 }
 .text-one h2 span {
   font-weight: bold;
@@ -44,22 +38,18 @@ main {
 
 /*styles for the section two */
 .two {
-  background-color: #d3d3d3;
-  display: flex;
-  justify-content: center;
+  min-height: 100%;
+  width: 100%;
 }
 .two .img-container {
-  max-width: 1000px;
   width: 100%;
-  padding: 3rem;
-}
-.two .img-container img {
-  object-fit: contain;
+  height: 100%;
 }
 
 /*styles for the section three */
 .three {
   background-color: white;
+  height: 100%;
 }
 .three .big-box {
   height: 100%;
@@ -105,11 +95,17 @@ main {
 }
 
 /*styles for the section five */
-.five .img-container {
+.five {
   height: 100%;
+}
+.five .img-container {
+  height: 80vh;
+  width: 100%;
 }
 .five .img-container img {
   object-position: bottom;
+  max-height: 100%;
+  width: 100%;
 }
 .text-five {
   padding-bottom: 2rem;
@@ -156,9 +152,6 @@ main {
   .three .first-img img {
     object-position: 60% 40%;
   }
-  .one .img-container img {
-    object-position: 20%;
-  }
 }
 
 @media screen and (min-width: 1050px) {
@@ -188,7 +181,7 @@ main {
     display: flex;
     justify-content: center;
     height: 100vh;
-    margin: 4rem;
+    /*margin: 4rem;*/
   }
   .text-one {
     max-width: 340px;
@@ -196,7 +189,7 @@ main {
   }
   .one .img-container {
     height: 100%;
-    max-width: 600px;
+    /*max-width: 600px;*/
   }
   .one .img-container img {
     object-position: 100% 100%;
@@ -210,17 +203,18 @@ main {
   /*styles for the section three*/
 
   .three {
-    height: 120vh;
+    height: 100vh;
   }
 
   .three .big-box {
-    height: 120vh;
+    height: 100vh;
   }
   .three .img-container {
     position: relative;
+    height: 50%;
   }
-  .three .first-img {
-    height: 60%;
+  .three .img-container img {
+    object-position: 50% 40%;
   }
 
   .three .img-container .three .content {
@@ -232,9 +226,8 @@ main {
   .three .content-box {
     position: absolute;
     z-index: 100;
-    height: 120vh;
+    height: 100vh;
     width: 100%;
-    max-width: 1600px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -245,12 +238,6 @@ main {
   }
 
   /*styles for the section four */
-  .four .content-on-img h2 {
-    margin-bottom: 27rem;
-  }
-  .four .content-on-img .button {
-    margin-top: 6rem;
-  }
 
   /*styles for the section five */
 
@@ -259,33 +246,24 @@ main {
     flex-direction: row-reverse;
     height: 100vh;
   }
+  .five .img-container {
+    height: 100%;
+  }
   .text-five {
     max-width: 390px;
     min-width: 390px;
   }
+}
 
-  /*
-  .five {
+@media screen and (min-width: 1400px) {
+  .one .img-container img {
+    object-position: 20% 80%;
+  }
+  .three .big-box {
+    display: flex;
+  }
+  .three .img-container {
     height: 100%;
+    width: 50%;
   }
-  .five .content {
-    height: 100%;
-  }
-  .five .img-container {
-    height: 100vh;
-  }
-  .five .img-container img {
-    object-position: 60% 80%;
-  }*/
-
-  /*@media screen and (min-width: 1000px) {
-    .content-box{
-      padding: 2rem 0.5rem 2rem 0.5rem;
-  
-    }
-
-   
-  
-  }
-*/
 }

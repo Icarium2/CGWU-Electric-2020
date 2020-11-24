@@ -5,22 +5,23 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: rgb(201, 206, 215);
+  background-color: var(--light-blue);
   padding: 1rem;
 }
 .sign-up h3 {
   line-height: 1.8rem;
   padding: 1rem 0rem 1rem 0rem;
   font-family: "Helvetica";
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.7rem;
   line-height: 2rem;
+  color: black;
 }
 .form-container-sign-up {
   width: 100%;
   max-width: 350px;
-  background-color: rgb(201, 206, 215);
-  padding: 1rem;
+  background-color: var(--light-blue);
+  padding: 1.5rem;
   border-radius: 1rem;
 }
 .form-container-sign-up input[type="text"],
@@ -69,12 +70,16 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 800px) {
   .sign-up {
-    background-color: rgb(201, 206, 215); /*rgb(228, 228, 228);*/
-    padding: 2rem;
+    background-color: var(--dark-blue); /*rgb(228, 228, 228);*/
+    padding: 4rem;
   }
   .form-container-sign-up {
     /*padding: 3rem;*/
     margin: 1rem 0 1rem 0;
-    background-color: rgb(201, 206, 215);
+    background-color: var(--light-blue);
+  }
+  .sign-up h3 {
+    color: white;
+    padding-bottom: 3rem;
   }
 }

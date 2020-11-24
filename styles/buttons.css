@@ -25,17 +25,21 @@
 }
 
 .one .button {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid black;
+  color: black;
 }
 .five .button {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid black;
+  color: black;
 }
 
 .four .button {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid black;
+  color: black;
+}
+.three .button {
+  border: 1px solid black;
+  color: black;
 }
 
 @media screen and (min-width: 700px) {
