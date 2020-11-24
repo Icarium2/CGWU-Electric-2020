@@ -40,3 +40,6 @@ function closeForm() {
 function show_alert() {
   alert("Thank you for signing up!");
 }
+
+
+onclick="show_alert()"
