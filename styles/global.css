@@ -36,6 +36,10 @@ h2 {
   line-height: 4rem;
 }
 
-.wrapper-max-width {
-  max-width: 1400px;
+.main-container {
+  scroll-snap-type: y mandatory;
+}
+
+.section-container {
+  scroll-snap-align: start;
 }
