@@ -2,44 +2,40 @@
   border-radius: 1rem;
   text-decoration: none;
   font-weight: 200px;
-  padding: 0.3rem 2rem 0.3rem 2rem;
+  padding: 0.4rem 2rem 0.4rem 2rem;
   text-align: center;
   background-color: transparent;
   transition: ease 0.3s;
+  outline: none;
 }
-
-.one .button:hover {
-  background-color: var(--dark-blue);
-  color: white;
-}
-
-.hero .button:hover {
-  background-color: grey;
-}
-
-.hero .button {
+.hero-button {
   color: var(--dark-blue);
   background-color: white;
+  padding: 0.4rem 2rem 0.4rem 2rem;
   opacity: 0;
   transition: opacity 1s 0.2s;
 }
-
-.one .button {
+.hero-button:hover {
+  background-color: var(--dark-blue);
+  color: white;
+}
+.hero-button:focus {
   border: 1px solid black;
+  background-color: var(--light-blue);
   color: black;
 }
-.five .button {
-  border: 1px solid black;
-  color: black;
-}
-
-.four .button {
-  border: 1px solid black;
-  color: black;
-}
+.button-dark,
 .three .button {
   border: 1px solid black;
   color: black;
+}
+.button-dark:hover {
+  background-color: var(--dark-blue);
+  color: white;
+}
+.button-dark:focus {
+  border: 1px solid black;
+  background-color: var(--opacity-dark-blue);
 }
 
 @media screen and (min-width: 700px) {
@@ -50,10 +46,19 @@
     text-align: center;
   }
 }
-
 @media screen and (min-width: 1050px) {
   .three .button {
     border: 1px solid white;
     color: white;
+  }
+  .three .button:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+  }
+  .three .button:focus {
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    background-color: var(--light-blue);
   }
 }

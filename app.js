@@ -32,6 +32,9 @@ window.onload = function () {
 // function closeForm() {document.get ElementById(".btn cancel").style.display = "none";}
 //HTML: onclick="openForm()", onclick="closeForm()"
 
+
+/*
+
 const openChat = document.querySelector(".open-button");
 const closeChat = document.querySelector(".btn cancel");
 const myForm = document.querySelector("#myForm");
@@ -43,10 +46,10 @@ openChat.addEventListener('click', () => {
 closeChat.addEventListener('click', () => {
   myForm.style.display = "none";
 });
-
+*/
 // "Thanks for your question!" Message, after Chat Submit
 
-const XX = document.querySelector('.XX');
+/*const XX = document.querySelector('.XX');
 const XX = document.querySelector('.XX');
 const XX = document.querySelector('.XX');
 const XX = document.querySelector('.XX');
@@ -81,15 +84,9 @@ sendButton.addEventListener('click',  () => {
       }
     });
   }
-});
+});*/
 
-const thankYou = document.querySelector(".sign-up h3");
-const form = document.querySelector(".form-container-sign-up");
-const sendButton = document.querySelector(".button-sign-up");
-const name = document.querySelector(".name input");
-const email = document.querySelector(".email input");
-const goTop = document.querySelector(".sign-up .goTop");
-const check = document.querySelector(".checkbox input");
+
 
 const thankYou = document.querySelector(".sign-up h3");
 const form = document.querySelector(".form-container-sign-up");
