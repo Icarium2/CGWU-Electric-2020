@@ -9,6 +9,12 @@
   margin: 4rem 0.5rem 3rem 0.5rem;
 }
 
+.twitter:hover,
+.instagram:hover,
+.facebook:hover {
+  background-color: black;
+}
+
 @media screen and (min-width: 800px) {
   .social-media {
     background-color: var(--dark-blue);

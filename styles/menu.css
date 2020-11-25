@@ -94,6 +94,10 @@ nav {
     display: block;
     z-index: 30;
   }
+
+  .burger:hover {
+    cursor: pointer;
+  }
 }
 
 .nav-active {
