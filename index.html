@@ -13,36 +13,35 @@
     <link rel="stylesheet" href="/styles/hero.css">
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/signup.css">
-    <link rel="stylesheet" href="/styles/socials.css">
     <link rel="stylesheet" href="/styles/footer.css">
     <title>Electric</title>
 </head>
 <body>
-    <button class="open-button" onclick="openForm()"><i class="far fa-comment-dots"></i></button>
+    <section class="chat-form">
+        <button class="open-button" onclick="openForm()"><i class="far fa-comment-dots"></i></button>
+        <div class="chat-popup" id="myForm">
+            <form action="index.html" class="form-container">
+                <h3 id="ask">Ask a question</h3>
 
-    <div class="chat-popup" id="myForm">
-        <form action="index.html" class="form-container">
-            <h3 id="ask">Ask a question</h3>
+                <label for="msg"><b>Name</b></label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name"></input>
+        
+                <label for="msg"><b>Email</b></label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email"></input>
+        
+                <label for="msg"><b>Question</b></label>
+                <textarea class="question" placeholder="..." name="question" required></textarea>
+        
+                <!--Box is unchecked by default--> 
+                <label class="container">
+                <input type="checkbox" class="checkmark">Get updates and early access
+                </label>
 
-            <label for="msg"><b>Name</b></label>
-            <textarea placeholder="..." name="name" required></textarea>
-    
-            <label for="msg"><b>Email</b></label>
-            <textarea placeholder="..." name="email" required></textarea>
-    
-            <label for="msg"><b>Question</b></label>
-            <textarea class="question" placeholder="..." name="question" required></textarea>
-    
-            <!--Put 'checked="checked"' after type=checkbox if we want it checked be default--> 
-            <label class="container">
-  	        <input type="checkbox" class="checkmark">Get updates and early access
-  	        </label>
-
-            <button type="submit" class="btn">SUBMIT</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-        </form>
-    </div>
-
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </section>
     <header>
         <nav>
             <a href="/index.html" class="logo">
@@ -74,11 +73,11 @@
                 <picture>
                     <source
                     media="(min-width: 1400px)"
-                    srcset="images/hero/in_motion_desktop.png"
+                    srcset="images/hero/hero_w2000.png"
                     >
                     <source
                     media="(min-width: 700px)"
-                    srcset="images/hero/in_motion_desktop.png"
+                    srcset="images/hero/hero_w700.png"
                     >
                     <source
                     media="(min-width: 500px)"
@@ -91,8 +90,8 @@
                 <h1>
                     <svg width="229" height="45" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d)" fill="#fff"><path d="M91.04 1.93V5.4H73.56v11.08h16.66v3.46H73.56v11.54h17.83v3.46H69.25v-33h21.79zM102.47 1.93v33.01h-4.31v-33h4.3zM120.28 10.7c6.96 0 10.44 3.41 10.44 10.23 0 .97-.07 2.01-.2 3.12h-17.18c0 4.95 2.92 7.43 8.76 7.43 2.78 0 5.25-.3 7.41-.92v3.46c-2.16.62-4.78.92-7.87.92-8.41 0-12.61-4.13-12.61-12.4 0-7.89 3.75-11.83 11.25-11.83zm-6.94 9.8h13.24c-.1-4.25-2.2-6.38-6.3-6.38-4.35 0-6.66 2.13-6.94 6.37zM155.41 34.25c-2.01.46-4.19.7-6.52.7-8.7 0-13.05-4.2-13.05-12.59 0-7.77 4.35-11.65 13.05-11.65 2.33 0 4.5.23 6.53.69v3.46a30.4 30.4 0 0 0-6.76-.7c-5.67 0-8.51 2.74-8.51 8.2 0 6.08 2.84 9.12 8.5 9.12 2.5 0 4.75-.23 6.76-.7v3.47zM161.4 6.78h2.7l.93 3.93h6.62v3.46h-5.95v13.92c0 2.26.99 3.4 2.96 3.4h2.99v3.45h-4.1c-4.1 0-6.16-2.17-6.16-6.53V6.78zM177.62 34.94V10.71h2.92l.77 3.09a10.76 10.76 0 0 1 7.73-3.1v3.56a9.06 9.06 0 0 0-7.1 3.07v17.61h-4.32zM198.63 10.7v24.24h-4.31V10.71h4.31zm0-8.77v4.04h-4.31V1.93h4.31zM225 34.25c-2.02.46-4.2.7-6.53.7-8.7 0-13.05-4.2-13.05-12.59 0-7.77 4.35-11.65 13.06-11.65 2.33 0 4.5.23 6.52.69v3.46c-2.02-.46-4.27-.7-6.76-.7-5.67 0-8.5 2.74-8.5 8.2 0 6.08 2.83 9.12 8.5 9.12 2.49 0 4.74-.23 6.76-.7v3.47zM30.98 0l5.35 3.08v6.17l-5.35 3.08-5.35-3.08V3.08L30.98 0zM16.56 0l5.35 3.08v6.17l-5.35 3.08-5.35-3.08V3.08L16.56 0zM45.4 0l5.34 3.08v6.17l-5.35 3.08-5.35-3.08V3.08L45.4 0zM38.18 12.33l5.36 3.09v6.16l-5.36 3.09-5.35-3.09v-6.16l5.35-3.09zM52.6 12.33l5.35 3.09v6.16l-5.35 3.09-5.35-3.09v-6.16l5.35-3.09zM23.77 12.33l5.35 3.09v6.16l-5.35 3.09-5.35-3.09v-6.16l5.35-3.09zM9.35 12.33l5.35 3.09v6.16l-5.35 3.09L4 21.58v-6.16l5.35-3.09zM30.98 24.67l5.35 3.08v6.17L30.98 37l-5.35-3.08v-6.17l5.35-3.08zM45.4 24.67l5.34 3.08v6.17L45.4 37l-5.35-3.08v-6.17l5.35-3.08zM16.56 24.67l5.35 3.08v6.17L16.56 37l-5.35-3.08v-6.17l5.35-3.08z"/></g><defs><filter id="filter0_d" x="0" y="0" width="229" height="45" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
                 </h1>
-                <p class="date">February 2021</p>
-                <a class="button" type="button" href="/order.html">Get early access</a>
+                <!--<p class="date">February 2021</p>-->
+                <a class="button" type="button" href="#sign-up">Get early access</a>
             </div>
         </section>
     </header>
@@ -125,7 +124,7 @@
                        <h2>You are special.<br> Electric.</h2>
                        <p>Peugeot is bringing driving to the next level. We are on the go for the future. Our aim is to become one of the world’s most innovative companies. And now we are proud to present our motorcycle for the future: Electric.</p>
                     </div>
-                    <a  class="button" type="button" href="/order.html">Pre-order now</a>
+                    <a  class="button" type="button" href="/order.html">See more and sign up</a>
                 </section>
             </section>
         </section>
@@ -158,7 +157,7 @@
                     <div class="text-three">
                         <p>Design and features <br> for the future.</p>
                     </div>
-                    <a  class="button" type="button" href="/order.html">Customize your Electric </a>
+                    <a  class="button" type="button" href="/order.html">Customize Electric </a>
                 </section>
             </section>
             <section class="big-box">
@@ -236,7 +235,7 @@
                         <h2>History</h2>
                         <p>Peugeot is a brand with history. The first car to carry the Peugeot name was unveiled in 1889, making Peugeot the world's second oldest car manufacturer and the oldest continuous car brand. Family business is now global business. Today we are starting a new chapter. Electric; it is the future.</p>
                     </div>
-                    <a  class="button" type="button" href="/order.html">Pre-order now</a>
+                    <a  class="button" type="button" href="/order.html">See more and sign up</a>
                 </section>
             </section>
             <div class="img-container">
@@ -282,30 +281,28 @@
                 <button type="submit" class="button-sign-up">Submit</button>
             </form>
         </section> 
-        <section class="social-media">
-            <a class="twitter" href="/twitter"><svg width="82" height="82" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M41 82a41 41 0 1 0 0-82 41 41 0 0 0 0 82zm16.4-53.5l4.6-.78-4.6 3.95C59.7 44.32 44.33 68.05 19 55.4c8.45 0 13.05-3.95 13.05-3.95s-5.37 0-8.44-6.33h5.37c-5.37-1.58-8.44-4.74-8.44-9.48l4.6 1.58c-7.68-5.54-3.07-12.66-3.07-12.66s6.14 9.5 18.43 9.5c-3.07-7.12 7.68-15.82 14.59-7.91l5.37-1.59-3.07 3.96z" fill="#162133"/></svg></a>
-            <a class="facebook" href="/facebook"><svg width="82" height="82" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.63 81.3A41.01 41.01 0 0 0 41 0a41 41 0 0 0-4.3 81.78V55.3H27V44.27h9.7v-8.41C36.7 26.29 42.4 21 51.12 21c4.18 0 8.55.75 8.55.75v9.4h-4.82c-4.74 0-6.22 2.94-6.22 5.96v7.16h10.6l-1.7 11.04h-8.9V81.3z" fill="#162133"/></svg></a>
-            <a class="instagram" href="/instagram"><svg width="82" height="82" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M41 82a41 41 0 1 0 0-82 41 41 0 0 0 0 82zm5.42-46.42A7.39 7.39 0 0 1 48.67 41c0 2.12-.75 3.92-2.25 5.42A7.39 7.39 0 0 1 41 48.67a7.39 7.39 0 0 1-5.42-2.25A7.39 7.39 0 0 1 33.33 41c0-2.12.75-3.92 2.25-5.42A7.39 7.39 0 0 1 41 33.33c2.12 0 3.92.75 5.42 2.25zm2.94 13.78c2.3-2.3 3.44-5.09 3.44-8.36 0-3.27-1.15-6.06-3.44-8.36A11.38 11.38 0 0 0 41 29.2c-3.27 0-6.06 1.15-8.36 3.44A11.38 11.38 0 0 0 29.2 41c0 3.27 1.15 6.06 3.44 8.36 2.3 2.3 5.09 3.44 8.36 3.44 3.27 0 6.06-1.15 8.36-3.44zm5.87-18.7c.53-.53.8-1.18.8-1.94s-.27-1.4-.8-1.95a2.65 2.65 0 0 0-1.95-.8c-.76 0-1.4.27-1.95.8-.54.54-.8 1.2-.8 1.95 0 .76.26 1.4.8 1.95.54.54 1.19.8 1.95.8s1.4-.26 1.95-.8zM38.7 22.13a796.47 796.47 0 0 0 4.58 0h3.16c.72 0 1.68.04 2.89.09 1.2.05 2.24.15 3.09.3a12 12 0 0 1 2.14.55 7.77 7.77 0 0 1 4.37 4.37c.22.58.4 1.3.55 2.14.15.85.25 1.88.3 3.09a111.12 111.12 0 0 1 .08 8.34l.01 2.3v3.15c0 .72-.04 1.68-.09 2.89-.05 1.2-.15 2.24-.3 3.09a12 12 0 0 1-.55 2.14 7.77 7.77 0 0 1-4.37 4.37 12 12 0 0 1-2.14.55c-.85.15-1.88.25-3.09.3a111.12 111.12 0 0 1-8.34.08l-2.3.01h-3.15c-.72 0-1.68-.04-2.89-.09-1.2-.05-2.24-.15-3.09-.3a12 12 0 0 1-2.14-.55 7.77 7.77 0 0 1-4.37-4.37 12 12 0 0 1-.55-2.14c-.15-.85-.25-1.88-.3-3.09a111.12 111.12 0 0 1-.08-8.34l-.01-2.3v-3.15c0-.72.04-1.68.09-2.89.05-1.2.15-2.24.3-3.09a12 12 0 0 1 .55-2.14 7.77 7.77 0 0 1 4.37-4.37 12 12 0 0 1 2.14-.55c.85-.15 1.88-.25 3.09-.3a111.12 111.12 0 0 1 6.05-.1zm25.14 28.37c.1-1.75.15-4.92.15-9.49s-.05-7.74-.15-9.5c-.2-4.15-1.44-7.36-3.71-9.64-2.28-2.27-5.5-3.51-9.65-3.71-1.75-.1-4.92-.15-9.49-.15s-7.74.05-9.5.15c-4.15.2-7.36 1.44-9.64 3.71-2.27 2.28-3.51 5.5-3.71 9.65-.1 1.75-.15 4.92-.15 9.49s.05 7.74.15 9.5c.2 4.15 1.44 7.36 3.71 9.64 2.28 2.27 5.5 3.51 9.65 3.71 1.75.1 4.92.15 9.49.15s7.74-.05 9.5-.15c4.15-.2 7.36-1.44 9.64-3.71 2.27-2.28 3.51-5.5 3.71-9.65z" fill="#162133"/></svg></a>
-        </section>
+       
     </main>  
     <footer>
-            <ul>
-                <li>
-                    <a href="/">Menu</a>
-                </li>
-                <li>
-                    <a href="/">Contact</a>
-                </li>
-                <li>
-                    <a href="/">Peugeot – Company</a>
-                </li>
-                <li>
-                    <a href="/">Peugeot Assistant+</a>
-                </li>
-                <li>
-                    <a href="/">Social Media</a>
-                </li>
-            </ul>
+        <section class="social-media">
+            <a class="twitter" href="/twitter"><svg width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M29 58a29 29 0 100-58 29 29 0 000 58zm1.23-17.39c-2.27.93-4.7 1.4-7.16 1.39v-.04c-3.57.01-7.06-1-10.07-2.91.52.07 1.04.11 1.56.13a13.16 13.16 0 008.16-2.91 6.56 6.56 0 01-6.08-4.5c.96.18 1.96.14 2.9-.11a6.59 6.59 0 01-5.16-6.47v-.08c.9.5 1.9.78 2.91.82a6.56 6.56 0 01-2.04-8.73 18.6 18.6 0 0013.53 6.85 6.57 6.57 0 0111.2-5.97c1.47-.3 2.88-.83 4.16-1.6a6.63 6.63 0 01-2.9 3.63c1.3-.16 2.56-.5 3.76-1.03a13.67 13.67 0 01-3.26 3.39v.86a18.56 18.56 0 01-11.5 17.28z" fill="var(--dark-blue)"/></svg></a>
+            <a class="facebook" href="/facebook"><svg width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M34.4 57.66A29.07 29.07 0 0058 29.08 29.04 29.04 0 0029 0C12.98 0 0 13.02 0 29.08A29.05 29.05 0 0025.96 58V39.23H19.1V31.4h6.86v-5.97c0-6.79 4.03-10.54 10.2-10.54 2.95 0 6.05.53 6.05.53v6.67H38.8c-3.36 0-4.4 2.09-4.4 4.23v5.08h7.49l-1.2 7.83h-6.3v18.43z" fill="var(--dark-blue)"/></svg></a>
+            <a class="instagram" href="/instagram"><svg width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M29 58a29 29 0 100-58 29 29 0 000 58zm3.83-32.83a5.22 5.22 0 011.6 3.83c0 1.5-.54 2.77-1.6 3.83a5.22 5.22 0 01-3.83 1.6c-1.5 0-2.77-.54-3.83-1.6a5.22 5.22 0 01-1.6-3.83c0-1.5.54-2.77 1.6-3.83a5.22 5.22 0 013.83-1.6c1.5 0 2.77.54 3.83 1.6zm2.08 9.74A8.05 8.05 0 0037.35 29c0-2.32-.82-4.29-2.44-5.91A8.05 8.05 0 0029 20.65c-2.32 0-4.29.82-5.91 2.44A8.05 8.05 0 0020.65 29c0 2.32.82 4.29 2.44 5.91A8.05 8.05 0 0029 37.35c2.32 0 4.29-.82 5.91-2.44zm4.15-13.22c.38-.38.57-.84.57-1.37 0-.54-.19-1-.57-1.38a1.88 1.88 0 00-1.38-.57c-.53 0-1 .19-1.37.57-.38.38-.57.84-.57 1.38 0 .53.19 1 .57 1.37.38.38.84.57 1.37.57.54 0 1-.19 1.38-.57zm-11.68-6.05a549.96 549.96 0 005.48 0c.5.01 1.19.03 2.04.07.85.03 1.58.1 2.18.21.6.1 1.1.24 1.52.4a5.5 5.5 0 013.09 3.08c.15.41.28.92.39 1.52.1.6.18 1.33.21 2.18a78.72 78.72 0 01.06 5.9 549.71 549.71 0 000 3.86c0 .5-.02 1.19-.06 2.04-.03.85-.1 1.58-.21 2.18-.1.6-.24 1.1-.4 1.52a5.5 5.5 0 01-3.08 3.09c-.41.15-.92.28-1.52.39-.6.1-1.33.18-2.18.21a78.73 78.73 0 01-5.9.06 549.96 549.96 0 00-3.86 0c-.5 0-1.19-.02-2.04-.06-.85-.03-1.58-.1-2.18-.21-.6-.1-1.1-.24-1.52-.4a5.5 5.5 0 01-3.09-3.08 8.5 8.5 0 01-.39-1.52c-.1-.6-.18-1.33-.21-2.18a78.73 78.73 0 01-.06-5.9 549.96 549.96 0 000-3.86c0-.5.02-1.19.06-2.04.03-.85.1-1.58.21-2.18.1-.6.24-1.1.4-1.52a5.5 5.5 0 013.08-3.09 8.5 8.5 0 011.52-.39c.6-.1 1.33-.18 2.18-.21a78.72 78.72 0 014.28-.07zm17.78 20.07c.07-1.24.1-3.48.1-6.71s-.03-5.47-.1-6.71c-.14-2.94-1.01-5.22-2.62-6.83-1.61-1.6-3.89-2.48-6.83-2.62-1.24-.07-3.48-.1-6.71-.1s-5.47.03-6.71.1c-2.94.14-5.22 1.01-6.83 2.62-1.6 1.61-2.48 3.89-2.62 6.83-.07 1.24-.1 3.48-.1 6.71s.03 5.47.1 6.71c.14 2.94 1.01 5.22 2.62 6.83 1.61 1.6 3.89 2.48 6.83 2.62 1.24.07 3.48.1 6.71.1s5.47-.03 6.71-.1c2.94-.14 5.22-1.01 6.83-2.62 1.6-1.61 2.48-3.89 2.62-6.83z" fill="var(--dark-blue)"/></svg></a>
+        </section>
+        <ul>
+            <li>
+                <a href="/">Menu</a>
+            </li>
+            <li>
+                <a href="/">Contact</a>
+            </li>
+            <li>
+                <a href="/">Peugeot – Company</a>
+            </li>
+            <li>
+                <a href="/">Peugeot Assistant+</a>
+            </li>
+        </ul>
     </footer>
     <script src="app.js"></script>
 </body>

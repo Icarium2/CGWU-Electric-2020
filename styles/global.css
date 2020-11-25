@@ -20,7 +20,9 @@ body {
   --font-color: black;
   --font-color-light: white;
   --dark-blue: #162133;
+  --opacity-dark-blue: rgba(22, 33, 51, 0.8);
   --light-blue: rgb(201, 206, 215);
+  --chat-bg: rgb(215, 220, 227);
 }
 
 img {
