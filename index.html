@@ -131,20 +131,25 @@
         </section>
         <section class="two section-container" id="two">
             <div class="img-container">
-                <img
-                src="images/section2/2_w450.png"
-                srcset="
-                images/section2/2_w700.png 750w,
-                images/section2/2_w1000.png 1050w
-                images/section2/2_w2000.png 1400w
-                "
-                sizes="
-                (min-width: 1400px) 1400px,
-                  (min-width: 1050px) 1050px,
-                  (min-width: 700px) 750px, 100vw
-                  "
-                alt="My perfect alt text"
-              />
+                <picture>
+                    <source 
+                    media="(min-width: 1400px)"
+                    srcset=""
+                    >
+                    <source
+                    media="(min-width: 1000px)"
+                    srcset="images/section2/bike_with_lines.png"
+                    >
+                    <source
+                    media="(min-width: 800px)"
+                    srcset=""
+                    >
+                    <source
+                    media="(min-width: 500px)"
+                    srcset=""
+                    >
+                    <img src="images/section2/bike_no_lines_mobil 2_w450.png" alt="Car at night" />
+                </picture>
             </div>
         </section>
         <section class="three section-container" id="three">
@@ -258,7 +263,8 @@
         </section>
         <section class="sign-up section-container" id="sign-up">
             <h3>Sign up to get early access and more details from Electric!</h3>
-            <form class="form-container-sign-up" action="index.html" >
+            <a href=""></a>
+            <form class="form-container-sign-up" action="index.html?#sign-up" >
                 <div class="name">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required placeholder="Enter your full name"></input>
@@ -273,7 +279,7 @@
                         <span class="checkmark"></span>
                       </label>
                 </div>
-                <button type="submit" class="buttom-sign-up">Submit</button>
+                <button type="submit" class="button-sign-up">Submit</button>
             </form>
         </section> 
         <section class="social-media">

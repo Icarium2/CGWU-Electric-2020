@@ -26,7 +26,7 @@
 }
 .form-container-sign-up input[type="text"],
 input[type="email"],
-.buttom-sign-up {
+.button-sign-up {
   width: 100%;
   padding: 0.7rem;
   margin: 0.3rem 0rem 1rem 0rem;
@@ -60,11 +60,11 @@ input[type="checkbox"] {
   font-size: 0.7rem;
   margin: 0.3rem 0rem 1rem 0rem;
 }
-.buttom-sign-up {
+.button-sign-up {
   background-color: var(--dark-blue);
   color: white;
 }
-.buttom-sign-up:hover {
+.button-sign-up:hover {
   opacity: 80%;
 }
 
