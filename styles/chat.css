@@ -65,6 +65,7 @@ label {
   font-family: "Helvetica";
 }
 
+/* Name+Email, input fields */
 .form-container input[type="text"],
 .form-container input[type="email"] {
   width: 100%;
@@ -89,7 +90,7 @@ label {
   min-height: 100px;
 }
 
-/* Textarea FOCUS */
+/* Input Fields FOCUS */
 .form-container textarea:focus,
 .form-container input[type="text"]:focus,
 .form-container input[type="email"]:focus {
