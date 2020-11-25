@@ -5,23 +5,23 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: var(--light-blue);
+  background-color: var(--opacity-dark-blue);
+  color: white;
   padding: 1rem;
 }
 .sign-up h3 {
   width: 100%;
   text-align: center;
-  line-height: 1.8rem;
-  padding: 2rem 0rem 1rem 0rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.09rem;
+  padding: 2rem 0rem 0.5rem 0rem;
   font-weight: 300;
-  font-size: 1.7rem;
-  line-height: 2rem;
-  color: black;
+  font-size: 2rem;
+  font-family: "Dosis";
 }
 .form-container-sign-up {
   width: 100%;
-  max-width: 350px;
-  background-color: var(--light-blue);
+  max-width: 360px;
   padding: 1.5rem;
   border-radius: 1rem;
 }
@@ -30,7 +30,7 @@ input[type="email"],
 .button-sign-up {
   width: 100%;
   padding: 0.7rem;
-  margin: 0.3rem 0rem 1rem 0rem;
+  margin: 0.4rem 0rem 1rem 0rem;
   border-radius: 2rem;
   font-size: 0.9rem;
   border: none;
@@ -38,46 +38,58 @@ input[type="email"],
 
 input[type="text"],
 input[type="email"] {
-  transition: 0.1s box-shadow ease-in-out;
+  transition: 0.1s ease-in-out;
+  background-color: var(--light-blue);
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus {
   outline: none;
-  box-shadow: 0 0 0.1rem 0.1rem #1621339f;
+  box-shadow: 0 0 0 0.3rem #d17439;
+  background-color: rgb(255, 255, 255);
 }
 .form-container-sign-up label {
   font-size: 1rem;
-  margin-left: 0rem;
+  margin-left: 0.6rem;
+  letter-spacing: 0.06rem;
 }
 .checkbox {
   display: flex;
   flex-direction: row-reverse;
 }
 input[type="checkbox"] {
-  margin-right: 0.6rem;
+  margin: 0.15rem 0.6rem 0 0.6rem;
+  padding: 1rem;
 }
 .container-checkbox label {
   font-size: 0.7rem;
-  margin: 0.3rem 0rem 1rem 0rem;
+  margin: 0.3rem 0.2rem 1rem 0rem;
+  letter-spacing: 0.02rem;
+  line-height: 1rem;
+  font-weight: 200;
 }
 .button-sign-up {
   background-color: var(--dark-blue);
   color: white;
+  letter-spacing: 0.1rem;
+  transition: 0.7s ease;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .button-sign-up:hover {
-  opacity: 80%;
+  box-shadow: 0 0 0 0.1rem #d17439;
+  background-color: #d17439;
 }
 
 .goTop {
   display: none;
-  color: var(--dark-blue);
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
   font-weight: 200;
   text-decoration: none;
   padding: 0.5rem;
   margin-top: 1rem;
-  background-color: transparent;
-  border: 1px solid var(--dark-blue);
   border-radius: 2rem;
   transition: 0.5s ease;
   text-align: center;
@@ -89,23 +101,14 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 800px) {
-  .sign-up {
-    background-color: var(--dark-blue);
-    padding: 4rem;
-  }
   .form-container-sign-up {
-    /*padding: 3rem;*/
-    margin: 1rem 0 1rem 0;
-    background-color: var(--light-blue);
+    margin: 0rem 0 1rem 0;
   }
   .sign-up h3 {
-    color: white;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
   }
   .goTop {
-    color: white;
-    border: 1px solid white;
-    background-color: transparent;
     padding: 0.7rem 1rem 0.7rem 1rem;
     transition: 0.5s ease;
   }
@@ -113,5 +116,9 @@ input[type="checkbox"] {
     background-color: var(--light-blue);
     color: var(--dark-blue);
     border: 1px solid var(--dark-blue);
+  }
+  .container-checkbox label {
+    margin: 0.3rem 0.6rem 1rem 0rem;
+    max-width: 330px;
   }
 }

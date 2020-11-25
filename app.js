@@ -24,7 +24,6 @@ navAnimation();
 
 window.onload = function () {
   document.querySelector(".hero-content h1").style.opacity = 1;
-  document.querySelector(".date").style.opacity = 1;
   document.querySelector(".hero-content .button").style.opacity = 1;
 };
 
@@ -57,6 +56,7 @@ sendButton.addEventListener('click',  () => {
     thankYou.textContent = "Thank you for signing up! We will contact you soon";
     form.style.display ="none";
     goTop.style.display = "block"; 
+    goTop.style.margin = "1rem"; 
      
   }
   if(name.value && email.value === ""){
