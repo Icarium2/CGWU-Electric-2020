@@ -12,6 +12,7 @@
   font-size: 2.2rem;
   color: #f1f1f1;
   z-index: 50;
+  outline: none;
 }
 
 /* The popup chat - hidden by default */
@@ -74,6 +75,7 @@ label {
   background: #ffffff;
   resize: none;
   max-height: 50px;
+  outline: none;
 }
 /* Textarea, input fields */
 .form-container textarea {
@@ -88,7 +90,9 @@ label {
 }
 
 /* Textarea FOCUS */
-.form-container textarea:focus {
+.form-container textarea:focus,
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus {
   outline: none;
   box-shadow: 0 0 0.07rem 0.07rem #242c389f;
 }
@@ -120,6 +124,12 @@ label {
   cursor: pointer;
   width: 100%;
   margin-bottom: 10px;
+}
+
+.form-container .btn:focus {
+  background-color: #d17439;
+  color: black;
+  outline: none;
 }
 
 /* CANCEL button, background color */

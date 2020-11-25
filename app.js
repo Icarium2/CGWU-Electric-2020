@@ -53,11 +53,10 @@ const check = document.querySelector('.checkbox input');
 sendButton.addEventListener('click',  () => {
   
   if(name.value && email.value !== "") {
-    thankYou.textContent = "Thank you for signing up! We will contact you soon";
+    thankYou.textContent = "Thank you for signing up! We will contact you soon.";
     form.style.display ="none";
     goTop.style.display = "block"; 
     goTop.style.margin = "1rem"; 
-    sendButton.style 
      
   }
   if(name.value && email.value === ""){
