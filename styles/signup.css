@@ -13,11 +13,10 @@
   width: 100%;
   text-align: center;
   line-height: 2.5rem;
-  letter-spacing: 0.09rem;
+  letter-spacing: 0.05rem;
   padding: 2rem 0rem 0.5rem 0rem;
   font-weight: 300;
-  font-size: 2rem;
-  font-family: "Dosis";
+  font-size: 1.8rem;
 }
 .form-container-sign-up {
   width: 100%;
@@ -74,7 +73,6 @@ input[type="checkbox"] {
   letter-spacing: 0.1rem;
   transition: 0.7s ease;
   font-size: 1rem;
-  font-weight: 700;
 }
 .button-sign-up:hover {
   box-shadow: 0 0 0 0.1rem #d17439;
