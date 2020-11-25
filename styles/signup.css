@@ -9,9 +9,10 @@
   padding: 1rem;
 }
 .sign-up h3 {
+  width: 100%;
+  text-align: center;
   line-height: 1.8rem;
-  padding: 1rem 0rem 1rem 0rem;
-  font-family: "Helvetica";
+  padding: 2rem 0rem 1rem 0rem;
   font-weight: 300;
   font-size: 1.7rem;
   line-height: 2rem;
@@ -68,9 +69,28 @@ input[type="checkbox"] {
   opacity: 80%;
 }
 
+.goTop {
+  display: none;
+  color: var(--dark-blue);
+  font-weight: 200;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--dark-blue);
+  border-radius: 2rem;
+  transition: 0.5s ease;
+  text-align: center;
+}
+.goTop:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  border: 1px solid rgb(62, 62, 62);
+}
+
 @media screen and (min-width: 800px) {
   .sign-up {
-    background-color: var(--dark-blue); /*rgb(228, 228, 228);*/
+    background-color: var(--dark-blue);
     padding: 4rem;
   }
   .form-container-sign-up {
@@ -81,5 +101,17 @@ input[type="checkbox"] {
   .sign-up h3 {
     color: white;
     padding-bottom: 3rem;
+  }
+  .goTop {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 0.7rem 1rem 0.7rem 1rem;
+    transition: 0.5s ease;
+  }
+  .goTop:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
   }
 }
