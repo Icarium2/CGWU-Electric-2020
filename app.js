@@ -57,6 +57,7 @@ sendButton.addEventListener('click',  () => {
     form.style.display ="none";
     goTop.style.display = "block"; 
     goTop.style.margin = "1rem"; 
+    sendButton.style 
      
   }
   if(name.value && email.value === ""){
