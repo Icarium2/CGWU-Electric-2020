@@ -51,7 +51,7 @@ main {
   height: 100%;
 }
 .three .big-box {
-  height: 100%;
+  height: 80vh;
 }
 .three .img-container {
   height: 50%;
@@ -75,22 +75,21 @@ main {
   position: relative;
   background-color: rgb(34, 34, 34);
 }
+.four .img-container img {
+  object-position: 20% 100%;
+}
+
 .four .content-on-img {
   position: absolute;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-top: 2rem;
   bottom: 0;
   color: var(--font-color-light);
-}
-.four .content-on-img h2 {
-  margin-bottom: 23rem;
-}
-.four .content-on-img .button {
-  margin-top: 2rem;
 }
 
 /*styles for the section five */
@@ -112,6 +111,7 @@ main {
 }
 .text-five h2 {
   padding-bottom: 1rem;
+  padding: ;
 }
 .text-five p {
   font-weight: 200;
