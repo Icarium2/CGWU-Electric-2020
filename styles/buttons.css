@@ -8,22 +8,6 @@
   transition: ease 0.3s;
   outline: none;
 }
-.hero-button {
-  color: var(--dark-blue);
-  background-color: white;
-  padding: 0.4rem 2rem 0.4rem 2rem;
-  opacity: 0;
-  transition: opacity 1s 0.2s;
-}
-.hero-button:hover {
-  background-color: var(--dark-blue);
-  color: white;
-}
-.hero-button:focus {
-  border: 1px solid var(--light-blue);
-  background-color: var(--light-blue);
-  color: black;
-}
 .button-dark,
 .three .button {
   border: 1px solid black;
