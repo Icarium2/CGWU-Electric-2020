@@ -77,7 +77,6 @@ main {
 .four .img-container img {
   object-position: 50% 50%;
 }
-
 .four .content-on-img {
   position: absolute;
   width: 100%;
@@ -109,8 +108,7 @@ main {
   max-width: 627px;
 }
 .text-five h2 {
-  padding-bottom: 1rem;
-  padding: ;
+  padding-bottom: 2rem;
 }
 .text-five p {
   font-weight: 200;
