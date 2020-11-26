@@ -22,11 +22,6 @@
   opacity: 0;
   transition: opacity ease-in 0.7s 0.5s;
 }
-@media screen and (min-width: 1000px) {
-  .hero-content {
-    margin-bottom: 20rem;
-  }
-}
 .hero .img-container {
   position: relative;
   width: 100%;
@@ -34,4 +29,9 @@
 }
 .hero .img-container img {
   object-position: bottom;
+}
+@media screen and (min-width: 1000px) {
+  .hero-content {
+    margin-bottom: 20rem;
+  }
 }
