@@ -25,7 +25,7 @@
   border-radius: 1rem;
 }
 .form-container-sign-up input[type="text"],
-input[type="email"],
+.form-container-sign-up input[type="email"],
 .button-sign-up {
   width: 100%;
   padding: 0.7rem;
@@ -35,7 +35,7 @@ input[type="email"],
   border: none;
 }
 .form-container-sign-up input[type="text"],
-input[type="email"] {
+.form-container-sign-up input[type="email"] {
   transition: 0.1s ease-in-out;
   background-color: var(--light-blue);
 }
