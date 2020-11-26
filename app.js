@@ -26,12 +26,25 @@ window.onload = function () {
   document.querySelector(".hero-content .button").style.opacity = 1;
 };
 
-// Open Chat, Close Chat
 
-// function openForm() {document.getElementById("myForm").style.display = "block";}
-// function closeForm() {document.get ElementById(".btn cancel").style.display = "none";}
-//HTML: onclick="openForm()", onclick="closeForm()"
+ 
 
+
+/*
+closeOnClick.forEach((a) => {
+  
+  a.addEventListener("click", (e) => {
+    
+    
+    e.preventDefault();
+    
+    closeNav.style.display = "translateX(0%)"; 
+
+  
+  });
+  
+});
+*/
 
 
 
@@ -109,6 +122,21 @@ sendButton.addEventListener('click',  () => {
     });
   }
 });*/
+
+
+const closeOnClick = document.querySelectorAll('.nav-items li a');
+const closeNav = document.querySelector('.nav-items');
+
+closeOnClick.forEach((a) => {
+
+  a.addEventListener("click", () => {
+    closeNav.classList.toggle("nav-active");
+    
+ 
+  }); 
+});
+
+
 
 
 
