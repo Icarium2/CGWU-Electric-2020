@@ -8,6 +8,7 @@
   transition: ease 0.3s;
   outline: none;
 }
+
 .button-dark,
 .three .button {
   border: 1px solid black;
