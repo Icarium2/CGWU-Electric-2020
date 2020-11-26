@@ -22,28 +22,23 @@
 </head>
 <body>
     <section class="chat-form">
-        <button class="open-button" aria-label="Chat"><i class="far fa-comment-dots"></i></button>
-        <div class="chat-popup myForm"   >
+        <button class="open-button" aria-label="Opens the chat where you can ask a question "><i class="far fa-comment-dots"></i></button>
+        <div class="chat-popup myForm">
             <form action="index.html" class="form-container">
                 <h3 id="ask">Ask a question</h3>
                 <div class="hide">
-                <label for="msg"><b>Name</b></label>
-                <input type="text" id="name" name="name" required placeholder="Enter your full name"></input>
-        
-                <label for="msg"><b>Email</b></label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email"></input>
-        
-                <label for="msg"><b>Question</b></label>
-                <textarea class="question" placeholder="..." name="question" required></textarea>
-        
-                <!--Box is unchecked by default--> 
-                <label class="container">
-                <input type="checkbox" class="checkmark">Get updates and early access
-                </label>
-
-                <button type="submit" class="btn">SUBMIT</button>
-             </div>
-                <button type="button" class="btn cancel">Close</button>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name"></input>
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email"></input>
+                    <label for="question"><b>Question</b></label>
+                    <textarea class="question" placeholder="..." id="question" name="question" required></textarea>
+                    <label class="container">
+                        <input type="checkbox" class="checkmark">Get updates and early access
+                    </label>
+                    <button type="submit" class="btn">SUBMIT</button>
+                </div>
+                <button type="button" class="btn cancel" aria-label="Close the chat">Close</button>
             </form>
         </div>
     </section>
@@ -99,7 +94,6 @@
                 <h1>
                     <svg width="229" height="45" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d)" fill="#fff"><path d="M91.04 1.93V5.4H73.56v11.08h16.66v3.46H73.56v11.54h17.83v3.46H69.25v-33h21.79zM102.47 1.93v33.01h-4.31v-33h4.3zM120.28 10.7c6.96 0 10.44 3.41 10.44 10.23 0 .97-.07 2.01-.2 3.12h-17.18c0 4.95 2.92 7.43 8.76 7.43 2.78 0 5.25-.3 7.41-.92v3.46c-2.16.62-4.78.92-7.87.92-8.41 0-12.61-4.13-12.61-12.4 0-7.89 3.75-11.83 11.25-11.83zm-6.94 9.8h13.24c-.1-4.25-2.2-6.38-6.3-6.38-4.35 0-6.66 2.13-6.94 6.37zM155.41 34.25c-2.01.46-4.19.7-6.52.7-8.7 0-13.05-4.2-13.05-12.59 0-7.77 4.35-11.65 13.05-11.65 2.33 0 4.5.23 6.53.69v3.46a30.4 30.4 0 0 0-6.76-.7c-5.67 0-8.51 2.74-8.51 8.2 0 6.08 2.84 9.12 8.5 9.12 2.5 0 4.75-.23 6.76-.7v3.47zM161.4 6.78h2.7l.93 3.93h6.62v3.46h-5.95v13.92c0 2.26.99 3.4 2.96 3.4h2.99v3.45h-4.1c-4.1 0-6.16-2.17-6.16-6.53V6.78zM177.62 34.94V10.71h2.92l.77 3.09a10.76 10.76 0 0 1 7.73-3.1v3.56a9.06 9.06 0 0 0-7.1 3.07v17.61h-4.32zM198.63 10.7v24.24h-4.31V10.71h4.31zm0-8.77v4.04h-4.31V1.93h4.31zM225 34.25c-2.02.46-4.2.7-6.53.7-8.7 0-13.05-4.2-13.05-12.59 0-7.77 4.35-11.65 13.06-11.65 2.33 0 4.5.23 6.52.69v3.46c-2.02-.46-4.27-.7-6.76-.7-5.67 0-8.5 2.74-8.5 8.2 0 6.08 2.83 9.12 8.5 9.12 2.49 0 4.74-.23 6.76-.7v3.47zM30.98 0l5.35 3.08v6.17l-5.35 3.08-5.35-3.08V3.08L30.98 0zM16.56 0l5.35 3.08v6.17l-5.35 3.08-5.35-3.08V3.08L16.56 0zM45.4 0l5.34 3.08v6.17l-5.35 3.08-5.35-3.08V3.08L45.4 0zM38.18 12.33l5.36 3.09v6.16l-5.36 3.09-5.35-3.09v-6.16l5.35-3.09zM52.6 12.33l5.35 3.09v6.16l-5.35 3.09-5.35-3.09v-6.16l5.35-3.09zM23.77 12.33l5.35 3.09v6.16l-5.35 3.09-5.35-3.09v-6.16l5.35-3.09zM9.35 12.33l5.35 3.09v6.16l-5.35 3.09L4 21.58v-6.16l5.35-3.09zM30.98 24.67l5.35 3.08v6.17L30.98 37l-5.35-3.08v-6.17l5.35-3.08zM45.4 24.67l5.34 3.08v6.17L45.4 37l-5.35-3.08v-6.17l5.35-3.08zM16.56 24.67l5.35 3.08v6.17L16.56 37l-5.35-3.08v-6.17l5.35-3.08z"/></g><defs><filter id="filter0_d" x="0" y="0" width="229" height="45" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
                 </h1>
-            </div>
         </section>
     </header>
     <main class="main-container"> 
@@ -131,7 +125,7 @@
                        <h2>You are special.<br> Electric.</h2>
                        <p>Peugeot is bringing driving to the next level. We are on the go for the future. Our aim is to become one of the world’s most innovative companies. And now we are proud to present our motorcycle for the future: Electric.</p>
                     </div>
-                    <a  class="button button-dark" type="button" href="/order.html">See more and sign up</a>
+                    <a  class="button button-dark" type="button" href="/order.html" aria-label="Will direct you to the page where you can display more colors of Electic and sign up the get early access">See more and sign up</a>
                 </section>
             </section>
         </section>
@@ -164,7 +158,7 @@
                     <div class="text-three">
                         <p>Design and features <br> for the future.</p>
                     </div>
-                    <a  class="button button-light" type="button" href="/order.html">Customize Electric </a>
+                    <a  class="button button-light" type="button" href="/order.html" aria-label="Will direct you to the page where you can display more colors of Electic and sign up the get early access">Customize Electric </a>
                 </section>
             </section>
             <section class="big-box">
@@ -245,7 +239,7 @@
                         <h2>History</h2>
                         <p>Peugeot is a brand with history. The first car to carry the Peugeot name was unveiled in 1889, making Peugeot the world's second oldest car manufacturer and the oldest continuous car brand. Family business is now global business. Today we are starting a new chapter. Electric; it is the future.</p>
                     </div>
-                    <a  class="button button-dark" type="button" href="/order.html">See more and sign up</a>
+                    <a  class="button button-dark" type="button" href="/order.html" aria-label="Will direct you to the page where you can display more colors of Electic and sign up the get early access">See more and sign up</a>
                 </section>
             </section>
             <div class="img-container">
@@ -271,8 +265,8 @@
             </div> 
         </section>
         <section class="sign-up section-container" id="sign-up">
-            <h3>Sign up for early access and updates from Electric!</h3>
-            <a class="goTop"href="/index.html">Go back to top</a>
+            <h3>Sign up to get early access and more details from Electric!</h3>
+            <a class="goTop"href="/index.html" aria-label="Will direct you to the the top of page">Go back to top</a>
             <form class="form-container-sign-up" action="index.html?#sign-up" >
                 <div class="name">
                     <label for="name">Name</label>
@@ -287,7 +281,7 @@
                         <input type="checkbox" required>
                       </label>
                 </div>
-                <button type="submit" class="button-sign-up">Submit</button>
+                <button type="submit" class="button-sign-up" role="submit">Submit</button>
             </form>
         </section> 
     </main>  
