@@ -21,14 +21,21 @@ const navAnimation = () => {
 };
 navAnimation();
 
+/* De-toggles the menu when clicking on a nav-item */
+
+const closeOnClick = document.querySelectorAll(".nav-items li a");
+const closeNav = document.querySelector(".nav-items");
+
+closeOnClick.forEach((a) => {
+  a.addEventListener("click", () => {
+    closeNav.classList.toggle("nav-active");
+  });
+});
+
 window.onload = function () {
   document.querySelector(".hero-content h1").style.opacity = 1;
   document.querySelector(".hero-content .button").style.opacity = 1;
 };
-
-
- 
-
 
 /*
 closeOnClick.forEach((a) => {
@@ -46,31 +53,27 @@ closeOnClick.forEach((a) => {
 });
 */
 
-
-
 const openChat = document.querySelector(".open-button");
 const closeChat = document.querySelector(".cancel");
 const myForm = document.querySelector(".myForm");
 
 function openForm() {
-  {document.querySelector(".myForm").style.display = "block";}
-
-};
-openChat.addEventListener('click', () => {
+  {
+    document.querySelector(".myForm").style.display = "block";
+  }
+}
+openChat.addEventListener("click", () => {
   openForm();
 });
 
 function closeForm() {
-  {document.querySelector(".myForm").style.display = "none";}
-
-};
-closeChat.addEventListener('click', () => {
+  {
+    document.querySelector(".myForm").style.display = "none";
+  }
+}
+closeChat.addEventListener("click", () => {
   closeForm();
 });
-
-
-
-
 
 /*
 openChat.addEventListener('click', () => {
@@ -122,23 +125,6 @@ sendButton.addEventListener('click',  () => {
     });
   }
 });*/
-
-
-const closeOnClick = document.querySelectorAll('.nav-items li a');
-const closeNav = document.querySelector('.nav-items');
-
-closeOnClick.forEach((a) => {
-
-  a.addEventListener("click", () => {
-    closeNav.classList.toggle("nav-active");
-    
- 
-  }); 
-});
-
-
-
-
 
 const thankYou = document.querySelector(".sign-up h3");
 const form = document.querySelector(".form-container-sign-up");

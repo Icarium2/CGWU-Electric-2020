@@ -52,7 +52,7 @@ nav {
   margin: 5px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .nav-items {
     width: 70%;
   }
@@ -67,7 +67,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 900px /*768px*/) {
+@media screen and (max-width: 1200px /*768px*/) {
   body {
     overflow-x: hidden;
   }

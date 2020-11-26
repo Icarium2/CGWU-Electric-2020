@@ -25,3 +25,30 @@ window.onload = function () {
     });
   }
 };
+
+//Response to form-input//
+const thankYou = document.querySelector(".sign-up h3");
+const form = document.querySelector(".form-container-sign-up");
+const sendButton = document.querySelector(".button-sign-up");
+const name = document.querySelector(".name input");
+const email = document.querySelector(".email input");
+const goTop = document.querySelector(".sign-up .goTop");
+const check = document.querySelector(".checkbox input");
+
+sendButton.addEventListener("click", () => {
+  if (name.value && email.value !== "") {
+    thankYou.textContent =
+      "Thank you for signing up! We will contact you soon.";
+    form.style.display = "none";
+    goTop.style.display = "block";
+    goTop.style.margin = "1rem";
+  }
+  if (name.value && email.value === "") {
+    false;
+    email.addEventListener("input", function (event) {
+      if (email.validity.typeMismatch) {
+        email.setCustomValidity("I am expecting an email address!");
+      }
+    });
+  }
+});
