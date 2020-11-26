@@ -37,6 +37,7 @@ window.onload = function () {
   document.querySelector(".hero-content .button").style.opacity = 1;
 };
 
+ 
 
 // "Thanks for your question!" Message, after Chat Submit
 
@@ -62,10 +63,10 @@ btnSubmit.addEventListener('click',  () => {
         }
       });
     }
+  }); 
 
 
-
-// Open chat
+  // Open chat
 
 const openChat = document.querySelector(".open-button");
 const closeChat = document.querySelector(".cancel");
@@ -88,6 +89,7 @@ function closeForm() {
 closeChat.addEventListener("click", () => {
   closeForm();
 });
+
 
 // "Thank you for signing up!" Message, after Sign Up
 
@@ -118,4 +120,4 @@ sendButton.addEventListener('click',  () => {
     });
   }
 });
-}); 
+
