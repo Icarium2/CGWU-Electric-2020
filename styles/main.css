@@ -87,6 +87,9 @@ main {
   bottom: 0;
   color: var(--font-color-light);
 }
+.four .content-on-img h2 {
+  font-size: 2.5rem;
+}
 
 /*styles for the section five */
 .five {
