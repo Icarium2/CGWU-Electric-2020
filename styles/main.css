@@ -141,9 +141,6 @@ main {
     max-width: 390px;
     min-width: 300px;
   }
-  .two {
-    height: 100vh;
-  }
   .three .big-box {
     height: 100vh;
   }
