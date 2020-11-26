@@ -102,17 +102,17 @@ button:hover {
 
 .colours .btn_wrap .black.selected {
   background-color: #212121;
-  color: #fff;
+  color: rgb(201, 206, 215);
 }
 
 .colours .btn_wrap .blue.selected {
   background-color: #2484e4;
-  color: #fff;
+  rgb(201, 206, 215);
 }
 
 .colours .btn_wrap .red.selected {
   background-color: #af1e2d;
-  color: #fff;
+  rgb(201, 206, 215);
 }
 
 .colours .btn_wrap .yellow.selected {
@@ -120,15 +120,6 @@ button:hover {
   color: rgb(0, 0, 0);
 }
 
-.colours .btn_wrap .coral.selected {
-  background-color: #ff6c37;
-  color: #fff;
-}
-
-.colours .btn_wrap .white.selected {
-  background-color: #eee;
-  color: #212121;
-}
 
 @keyframes fadein {
   0% {
@@ -188,7 +179,7 @@ button:hover {
   letter-spacing: 0.05rem;
   padding: 2rem 0rem 0.5rem 0rem;
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 .form-container-sign-up {
   width: 100%;
