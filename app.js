@@ -33,20 +33,44 @@ window.onload = function () {
 //HTML: onclick="openForm()", onclick="closeForm()"
 
 
-/*
+
 
 const openChat = document.querySelector(".open-button");
-const closeChat = document.querySelector(".btn cancel");
-const myForm = document.querySelector("#myForm");
+const closeChat = document.querySelector(".cancel");
+const myForm = document.querySelector(".myForm");
 
+function openForm() {
+  {document.querySelector(".myForm").style.display = "block";}
+
+};
 openChat.addEventListener('click', () => {
-  myForm.style.display = "block";
+  openForm();
 });
 
+function closeForm() {
+  {document.querySelector(".myForm").style.display = "none";}
+
+};
+closeChat.addEventListener('click', () => {
+  closeForm();
+});
+
+
+
+
+
+/*
+openChat.addEventListener('click', () => {
+
+  openForm().document.getElementById("myForm").style.display = "block";}
+  //myForm.style.display = "block";
+});
+
+/*
 closeChat.addEventListener('click', () => {
   myForm.style.display = "none";
-});
-*/
+});*/
+
 // "Thanks for your question!" Message, after Chat Submit
 
 /*const XX = document.querySelector('.XX');

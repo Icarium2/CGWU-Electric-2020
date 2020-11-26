@@ -42,7 +42,7 @@ input[type="email"] {
 .form-container-sign-up input[type="email"]:focus,
 .form-container-sign-up input[type="text"]:focus {
   outline: none;
-  box-shadow: 0 0 0 0.3rem var(--dark-blue);
+  box-shadow: 0 0 0 0.2rem var(--dark-blue);
   background-color: rgb(255, 255, 255);
 }
 

@@ -20,7 +20,7 @@
   color: white;
 }
 .hero-button:focus {
-  border: 1px solid black;
+  border: 1px solid var(--light-blue);
   background-color: var(--light-blue);
   color: black;
 }
