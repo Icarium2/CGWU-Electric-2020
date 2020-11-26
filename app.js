@@ -21,7 +21,7 @@ const navAnimation = () => {
 };
 navAnimation();
 
-/* De-toggles the menu when clicking on a nav-item */
+// De-toggles the menu when clicking on a nav-item 
 
 const closeOnClick = document.querySelectorAll(".nav-items li a");
 const closeNav = document.querySelector(".nav-items");
