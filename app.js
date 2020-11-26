@@ -37,21 +37,35 @@ window.onload = function () {
   document.querySelector(".hero-content .button").style.opacity = 1;
 };
 
-/*
-closeOnClick.forEach((a) => {
-  
-  a.addEventListener("click", (e) => {
-    
-    
-    e.preventDefault();
-    
-    closeNav.style.display = "translateX(0%)"; 
 
+// "Thanks for your question!" Message, after Chat Submit
+
+const thanks = document.querySelector('#ask');
+const chatForm = document.querySelector('.hide');
+const btnSubmit = document.querySelector('.btn');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+
+btnSubmit.addEventListener('click',  () => {
   
-  });
-  
-});
-*/
+    if(nameInput.value && emailInput.value !== "") {
+      thanks.textContent = "Thank you for your question! We will contact you soon.";
+      chatForm.style.display ="none";
+      thanks.style.padding = "20px 20px 80px 20px";
+      
+    }
+    if (nameInput.value && emailInput.value === "") {
+      false;
+      emailInput.addEventListener("input", function (event) {
+        if (emailInput.validity.typeMismatch) {
+          emailInput.setCustomValidity("I am expecting an email address!");
+        }
+      });
+    }
+
+
+
+// Open chat
 
 const openChat = document.querySelector(".open-button");
 const closeChat = document.querySelector(".cancel");
@@ -74,27 +88,6 @@ function closeForm() {
 closeChat.addEventListener("click", () => {
   closeForm();
 });
-
-/*
-openChat.addEventListener('click', () => {
-
-  openForm().document.getElementById("myForm").style.display = "block";}
-  //myForm.style.display = "block";
-});
-
-/*
-closeChat.addEventListener('click', () => {
-  myForm.style.display = "none";
-});*/
-
-// "Thanks for your question!" Message, after Chat Submit
-
-/*const XX = document.querySelector('.XX');
-const XX = document.querySelector('.XX');
-const XX = document.querySelector('.XX');
-const XX = document.querySelector('.XX');
-const XX = document.querySelector('.XX');
-
 
 // "Thank you for signing up!" Message, after Sign Up
 
@@ -124,30 +117,5 @@ sendButton.addEventListener('click',  () => {
       }
     });
   }
-});*/
-
-const thankYou = document.querySelector(".sign-up h3");
-const form = document.querySelector(".form-container-sign-up");
-const sendButton = document.querySelector(".button-sign-up");
-const name = document.querySelector(".name input");
-const email = document.querySelector(".email input");
-const goTop = document.querySelector(".sign-up .goTop");
-const check = document.querySelector(".checkbox input");
-
-sendButton.addEventListener("click", () => {
-  if (name.value && email.value !== "") {
-    thankYou.textContent =
-      "Thank you for signing up! We will contact you soon.";
-    form.style.display = "none";
-    goTop.style.display = "block";
-    goTop.style.margin = "1rem";
-  }
-  if (name.value && email.value === "") {
-    false;
-    email.addEventListener("input", function (event) {
-      if (email.validity.typeMismatch) {
-        email.setCustomValidity("I am expecting an email address!");
-      }
-    });
-  }
 });
+}); 
