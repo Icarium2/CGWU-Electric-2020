@@ -116,7 +116,7 @@ main {
   line-height: 2rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .section-style-desk .content-box {
     display: flex;
     align-items: flex-start;
