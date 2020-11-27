@@ -163,12 +163,12 @@ main {
     justify-content: space-between;
   }
   .one .content-box {
-    padding-top: 2rem;
+    padding-top: 3.5rem;
     padding-bottom: 3rem;
     padding-left: 3rem;
   }
   .five .content-box {
-    padding-top: 4rem;
+    padding-top: 3.5rem;
     padding-bottom: 4rem;
     padding-left: 3rem;
   }
