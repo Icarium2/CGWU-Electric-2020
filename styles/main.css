@@ -260,14 +260,14 @@ main {
   .one .img-container img {
     object-position: 20% 80%;
   }
-  .three .img-container {
-    height: 100%;
-    width: 50%;
-  }
 }
 
 @media screen and (min-width: 1400px) {
   .three .big-box {
     display: flex;
+  }
+  .three .img-container {
+    height: 100%;
+    width: 50%;
   }
 }
